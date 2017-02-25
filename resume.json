@@ -2,11 +2,11 @@
   "basics": {
     "name": "Giulio Dellorbo",
     "label": "Frontend Developer",
-    "picture": "https://lh3.googleusercontent.com/OPHirpx0ff0-s1NFcLvNW_VtnA1HQTyETlJ8_suGTClGcKxaOghQHqIAEGNPJprNhCVXXQBgA_ge7_c=w2560-h1440-rw-no",
+    "picture": "./profile.jpg",
     "email": "egm0121@gmail.com",
     "phone": "(+44) 7716786352",
     "website": "",
-    "summary": "I enjoy building engaging and fast web apps \n using web standards and the last open web technologies.\nMy goal is to produce unobtrusive, cross-browser quality code leading to responsive Uis and fast web sites.",
+    "summary": "I enjoy building engaging and fast web apps \n using web standards and the last open web technologies.\nMy goal is to produce modular, reusable code leading to responsive UIs and fast web sites.",
     "location": {
       "address": "Tower House 2 , 81 Fieldgate Street",
       "postalCode": "E11GU",
@@ -34,7 +34,7 @@
       "website": "https://www.easycontactnow.com/",
       "startDate": "2015-05-01",
       "endDate": "2017-01-01",
-      "summary": "Leading the frontend team my core responsabilities involve ensuring the frontend projects are delivered on time according to company standards, evaluating and making architectural and technologic choices for the frontend team , mentoring junior developers, ensuring all development it's up to standards by coaching and code reviewing team members contributions.",
+      "summary": "Leading the frontend team my core responsabilities involve ensuring the frontend projects are delivered on time according to company standards, evaluating and making architectural and technologic choices for the frontend team , mentoring junior developers, ensuring all development is up to standards by coaching and code reviewing team members contributions.",
       "highlights": []
     },
     {
@@ -43,16 +43,17 @@
       "website": "http://www.easycallnow.net/",
       "startDate": "2013-06-01",
       "endDate": "2015-05-01",
-      "summary": "Delivery of greenfield projects and features, existing code base refactors according to company standards and estimates, evaluating and making architectural and technologic choices, providing estimates ",
+      "summary": "Delivery of greenfield projects and features, existing code base refactors according to company standards, evaluating and making architectural and technologic choices, providing estimates ",
       "highlights": []
     },
     {
+      "pagebreak":true,
       "company": "UpCloo Ltd",
-      "position": "Javascript  Developer",
+      "position": "Javascript Developer",
       "website": "http://www.easycallnow.net/",
       "startDate": "2012-07-01",
       "endDate": "2012-09-01",
-      "summary": "Worked as frontend developer to provide a javascript widget SDK allowing easy integration results from the correlation engine into clients websites. focus on browser compatibility, minimizing bandwith and runtime performance impact for consumers.",
+      "summary": "Worked as a frontend developer to provide a javascript widget SDK allowing easy integration results from the correlation engine into clients websites. focus on browser compatibility, minimizing bandwith and runtime performance impact for end-users.",
       "highlights": [
         "cross-browser",
         "aws",
@@ -91,19 +92,20 @@
       "name": "Splitr App",
       "publisher": "Giulio Dellrbo",
       "website": "http://www.splitr-app.com/",
-      "summary": "Splitr is a free music iOs app that allows your device to manage two music players at same time, and play different tracks on each side when sharing headphones."
+      "summary": "Splitr is a free music iOS app that allows your device to manage two music players at same time, and play different tracks on each side when sharing headphones."
     }
   ],
   "skills": [
     {
+      "pagebreak":true,
       "name": "Web Development",
       "level": "Master",
       "keywords": [
         "HTML5",
         "CSS3",
         "Javascript",
-        "ES5",
-        "ES2015",
+        "ES.Next",
+        "ES6",
         "LESS",
         "SASS",
         "XML",
@@ -120,7 +122,7 @@
     },
     {
       "name": "Libraries and Frameworks",
-      "level": "Master",
+      "level": "",
       "keywords": [
         "Socket.io",
         "Express",

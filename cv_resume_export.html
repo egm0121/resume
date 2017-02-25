@@ -1,0 +1,527 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Giulio Dellorbo</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Giulio Dellorbo
+					</h1>
+					<h2>
+						Frontend Developer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">egm0121@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(+44) 7716786352</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href=""></a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>I enjoy building engaging and fast web apps 
+ using web standards and the last open web technologies.
+My goal is to produce modular, reusable code leading to responsive UIs and fast web sites.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Skype
+					</strong>
+					<div class="username">
+							egm0121
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://www.linkedin.com/in/giuliodellorbo">giuliodellorbo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>8X8 UK</span>
+					<span class="date">
+						2015-05-01 — 2017-01-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.easycontactnow.com/">https://www.easycontactnow.com/</a>
+				</div>
+				<div class="position">
+					Lead Frontend Developer
+				</div>
+				<div class="summary">
+					<p>Leading the frontend team my core responsabilities involve ensuring the frontend projects are delivered on time according to company standards, evaluating and making architectural and technologic choices for the frontend team , mentoring junior developers, ensuring all development is up to standards by coaching and code reviewing team members contributions.</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>DXI Ltd</span>
+					<span class="date">
+						2013-06-01 — 2015-05-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.easycallnow.net/">http://www.easycallnow.net/</a>
+				</div>
+				<div class="position">
+					Senior Frontend Developer
+				</div>
+				<div class="summary">
+					<p>Delivery of greenfield projects and features, existing code base refactors according to company standards, evaluating and making architectural and technologic choices, providing estimates </p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>UpCloo Ltd</span>
+					<span class="date">
+						2012-07-01 — 2012-09-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.easycallnow.net/">http://www.easycallnow.net/</a>
+				</div>
+				<div class="position">
+					Javascript Developer
+				</div>
+				<div class="summary">
+					<p>Worked as a frontend developer to provide a javascript widget SDK allowing easy integration results from the correlation engine into clients websites. focus on browser compatibility, minimizing bandwith and runtime performance impact for end-users.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">cross-browser</li>
+					<li class="bullet">aws</li>
+					<li class="bullet">jsonp</li>
+					<li class="bullet">thirdparty widget</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Contur Srl</span>
+					<span class="date">
+						2011-11-01 — 2013-06-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.easycallnow.net/">http://www.easycallnow.net/</a>
+				</div>
+				<div class="position">
+					Fullstack Developer
+				</div>
+				<div class="summary">
+					<p>Worked on backend and frontend performance optimization and feature implementations for the company core application, enterprise travel managment solution, currently used by enterprise customers and thousands of travel agencies for the italian, french, saudi arabia market. </p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">php</li>
+					<li class="bullet">redis</li>
+					<li class="bullet">frontend performance</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Liceo Scientifico Marie Curie</span>
+					<span class="date">
+						2006-09-01 — 2011-09-01
+					</span>
+				</h4>
+				<div class="area">
+					Scientific Studies
+				</div>
+				<div class="studyType">
+					High School Diploma
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="publications" class="row">
+		<aside class="col-sm-3">
+			<h3>Publications</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Splitr App</span>
+					<span class="date">
+						
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.splitr-app.com/"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>Giulio Dellrbo</strong>
+				</div>
+				<div class="summary">
+					<p>Splitr is a free music iOS app that allows your device to manage two music players at same time, and play different tracks on each side when sharing headphones.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Web Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Javascript</li>
+					<li>ES.Next</li>
+					<li>ES6</li>
+					<li>LESS</li>
+					<li>SASS</li>
+					<li>XML</li>
+					<li>JSON</li>
+					<li>REST</li>
+					<li>API</li>
+					<li>PHP</li>
+					<li>OOP</li>
+					<li>SQL</li>
+					<li>Redis</li>
+					<li>Fronted performance</li>
+					<li>WebSockets</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Libraries and Frameworks</h4>
+				</div>
+				<ul class="keywords">
+					<li>Socket.io</li>
+					<li>Express</li>
+					<li>Angular.js</li>
+					<li>React</li>
+					<li>React Native</li>
+					<li>Electron</li>
+					<li>Phonegap</li>
+					<li>Lodash</li>
+					<li>Ramda</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Italian</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>French</strong>
+				</div>
+				<div class="fluency">
+					Fluent
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Fluent
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>Mobile Development</li>
+					<li>Functional Programming</li>
+					<li>Reactive Programming</li>
+					<li>Audio Programming</li>
+					<li>IoT</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+
+	</div>
+	
+	</body>
+</html>
