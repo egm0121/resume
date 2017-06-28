@@ -5,8 +5,9 @@
     "picture": "./profile.jpg",
     "email": "egm0121@gmail.com",
     "phone": "(+44) 7716786352",
-    "website": "",
-    "summary": "I enjoy building engaging and fast web apps \n using web standards and the last open web technologies.\nMy goal is to produce modular, reusable code leading to responsive UIs and fast web sites.",
+    "website": ["https://github.com/egm0121","https://bitbucket.org/edellorbo"],
+    "summary": ["I like building engaging and fast web apps using web standards and the last open web technologies. ",
+                "My goal is to produce modular, reusable code leading to responsive UIs and performant applications."],
     "location": {
       "address": "Tower House 2 , 81 Fieldgate Street",
       "postalCode": "E11GU",
@@ -29,13 +30,13 @@
   },
   "work": [
     {
-      "company": "8X8 UK",
+      "company": "8x8 Inc",
       "position": "Lead Frontend Developer",
       "website": "https://www.easycontactnow.com/",
       "startDate": "2015-05-01",
       "endDate": "2017-01-01",
-      "summary": "Leading the frontend team my core responsabilities involve ensuring the frontend projects are delivered on time according to company standards, evaluating and making architectural and technologic choices for the frontend team , mentoring junior developers, ensuring all development is up to standards by coaching and code reviewing team members contributions.",
-      "highlights": []
+      "summary": "Leading the frontend team, my core responsabilities involve ensuring frontend projects are delivered on time according to company standards, evaluating and making architectural and technologic choices for the frontend team, mentoring junior developers, ensuring all development is up to standards by coaching and code reviewing team members contributions.",
+      "highlights": ["WebSockets","ES6"]
     },
     {
       "company": "DXI Ltd",
@@ -44,13 +45,12 @@
       "startDate": "2013-06-01",
       "endDate": "2015-05-01",
       "summary": "Delivery of greenfield projects and features, existing code base refactors according to company standards, evaluating and making architectural and technologic choices, providing estimates ",
-      "highlights": []
+      "highlights": ["Browser Extension","Angular","Node.js","Electron"]
     },
     {
-      "pagebreak":true,
       "company": "UpCloo Ltd",
       "position": "Javascript Developer",
-      "website": "http://www.easycallnow.net/",
+      "website": "https://github.com/upcloo",
       "startDate": "2012-07-01",
       "endDate": "2012-09-01",
       "summary": "Worked as a frontend developer to provide a javascript widget SDK allowing easy integration results from the correlation engine into clients websites. focus on browser compatibility, minimizing bandwith and runtime performance impact for end-users.",
@@ -64,10 +64,10 @@
     {
       "company": "Contur Srl",
       "position": "Fullstack Developer",
-      "website": "http://www.easycallnow.net/",
+      "website": "http://www.contur.it/",
       "startDate": "2011-11-01",
       "endDate": "2013-06-01",
-      "summary": "Worked on backend and frontend performance optimization and feature implementations for the company core application, enterprise travel managment solution, currently used by enterprise customers and thousands of travel agencies for the italian, french, saudi arabia market. ",
+      "summary": "Worked on backend and frontend performance optimization and feature implementations for the company core application, enterprise travel management solution, currently used by enterprise customers and thousands of travel agencies for the italian, french, saudi arabia market. ",
       "highlights": [
         "php",
         "redis",
@@ -89,15 +89,21 @@
   ],
   "publications": [
     {
-      "name": "Splitr App",
-      "publisher": "Giulio Dellrbo",
-      "website": "http://www.splitr-app.com/",
-      "summary": "Splitr is a free music iOS app that allows your device to manage two music players at same time, and play different tracks on each side when sharing headphones."
+      "name": "SplitBeats - iOS App",
+      "publisher": "Apple AppStore",
+      "website": "http://www.split-beats.com/",
+      "summary": "SplitBeats is a free music iOS app that allows your device to manage two music players at same time, and play different tracks on each side when sharing headphones."
+    },
+    {
+      "name": "$$Watchers - Chrome Dev Tools Extension",
+      "publisher": "Google Chrome Web Store",
+      "website":"http://goo.gl/c3nn5J",
+      "summary" : "Angular watchers is the ultimate AngularJS tool which tells you how many active watchers you currently have in your web app. It automatically updates the count so you can see a counter or a graph by opening the $$watchers panel inside Chrome Dev Tools."
+
     }
   ],
   "skills": [
     {
-      "pagebreak":true,
       "name": "Web Development",
       "level": "Master",
       "keywords": [

@@ -34,6 +34,7 @@
 					{{/label}}
 					{{/resume.basics}}
 				</div>
+				<div class="col-sm-3"><img src="http://git.local:8888/git/egm0121-resume-repo/profile.jpg"></div>
 			</div>
 		</div>
 	</header>
@@ -58,14 +59,14 @@
 				<div class="phone">{{.}}</div>
 			</div>
 			{{/phone}}
-			{{#website}}
 			<div class="col-sm-6">
 				<strong>Website</strong>
+				{{#each website}}
 				<div class="website">
 					<a href="{{.}}">{{.}}</a>
 				</div>
+				{{/each}}
 			</div>
-			{{/website}}
 			</div>
 		</div>
 	</section>
@@ -329,7 +330,7 @@
 	{{/if}}
 
 	{{#if resume.skills.length}}
-	<section id="skills" class="row">
+	<section id="skills" class="row page-break-print">
 		<aside class="col-sm-3">
 			<h3>Skills</h3>
 		</aside>
