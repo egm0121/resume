@@ -89,6 +89,12 @@
   ],
   "publications": [
     {
+      "name" : "SplitCloud - Music App / iOS / React Native",
+      "publisher": "Apple AppStore",
+      "website": "http://www.splitcloud-app.com/",
+      "summary": "Share your headphones with who's next to you and stream two different tracks choosing from the SoundCloud® streaming platform.SplitCloud gives you two independent music players with adjustable volumes and playlist using a single iPhone or iPod Touch."
+    },
+    {
       "name": "SplitBeats - iOS App",
       "publisher": "Apple AppStore",
       "website": "http://www.split-beats.com/",

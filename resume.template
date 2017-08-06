@@ -293,7 +293,7 @@
 	{{#if resume.publications.length}}
 	<section id="publications" class="row">
 		<aside class="col-sm-3">
-			<h3>Publications</h3>
+			<h3>Projects</h3>
 		</aside>
 		<div class="col-sm-9">
 			<div class="row">
