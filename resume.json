@@ -1,25 +1,27 @@
 {
   "basics": {
     "name": "Giulio Dellorbo",
-    "label": "Frontend Developer",
+    "label": "Staff Software Engineer",
     "picture": "./profile.jpg",
     "email": "egm0121@gmail.com",
-    "phone": "(+44) 7716786352",
-    "website": ["https://github.com/egm0121","https://bitbucket.org/edellorbo"],
-    "summary": ["I like building engaging and fast web apps using web standards and the last open web technologies. ",
-                "My goal is to produce modular, reusable code leading to responsive UIs and performant applications."],
+    "phone": "(+1) 646·953·7352",
+    "website": ["https://github.com/egm0121"],
+    "summary": ["I'm an experienced Software Developer having previously worked on complex web, desktop and mobile apps in the enterprise travel booking and unified communications industries.",
+                "My goal is to produce modular, reusable code leading to responsive UIs and performant applications.",
+                "In my free time I like to build and launch software products, using lean methodology and experimentation to achieve growth and product-market fit."
+              ],
     "location": {
-      "address": "Tower House 2 , 81 Fieldgate Street",
-      "postalCode": "E11GU",
-      "city": "London",
-      "countryCode": "UK",
-      "region": ""
+      "address": "550 W 54th street",
+      "postalCode": "10019",
+      "city": "New York",
+      "countryCode": "US",
+      "region": "New York"
     },
     "profiles": [
       {
-        "network": "Skype",
+        "network": "FB/Messenger",
         "username": "egm0121",
-        "url": ""
+        "url": "https://fb.me/egm0121"
       },
       {
         "network": "LinkedIn",
@@ -31,12 +33,21 @@
   "work": [
     {
       "company": "8x8 Inc",
-      "position": "Lead Frontend Developer",
+      "position": "Staff Software Engineer",
+      "website": "https://www.easycontactnow.com/",
+      "startDate": "2018-11-02",
+      "endDate": "2022-12-31",
+      "summary": "Responsible for architecture and implementation of core product features for an hybrid web and desktop application built and distributed from the same source code. Emphasis on code base reusability, maintainability and extensibility.Code reviewing team members contributions.",
+      "highlights": ["Electron", "React", "Redux", "WebRTC", "WebAssembly", "Cypress"]
+    },
+    {
+      "company": "8x8 UK",
+      "position": "Lead Frontend Developer - UK",
       "website": "https://www.easycontactnow.com/",
       "startDate": "2015-05-01",
-      "endDate": "2017-01-01",
+      "endDate": "2018-10-31",
       "summary": "Leading the frontend team, my core responsabilities involve ensuring frontend projects are delivered on time according to company standards, evaluating and making architectural and technologic choices for the frontend team, mentoring junior developers, ensuring all development is up to standards by coaching and code reviewing team members contributions.",
-      "highlights": ["WebSockets","ES6"]
+      "highlights": ["WebSockets","ES6","webpack","Node.js"]
     },
     {
       "company": "DXI Ltd",
@@ -71,6 +82,9 @@
       "highlights": [
         "php",
         "redis",
+        "Rest",
+        "SOAP",
+        "Phantomjs",
         "frontend performance"
       ]
     }
@@ -89,13 +103,19 @@
   ],
   "publications": [
     {
-      "name" : "SplitCloud - Music App / iOS / React Native",
-      "publisher": "Apple AppStore",
-      "website": "http://www.splitcloud-app.com/",
-      "summary": "Share your headphones with who's next to you and stream two different tracks choosing from the SoundCloud® streaming platform.SplitCloud gives you two independent music players with adjustable volumes and playlist using a single iPhone or iPod Touch."
+      "name" : "SpeedSound | Expo | Typescript",
+      "publisher": "App Store and Play Store",
+      "website": "https://www.speedsound.app/",
+      "summary": "SpeedSound is a unique voice-based speedometer that uses voice notifications to update the user of its live speed.Real-time gps speedometer using your headphones or speaker.Computes the stats and speed graph for every activity.Multiple speed unit measures supported."
     },
     {
-      "name": "SplitBeats - iOS App",
+      "name" : "SplitCloud | React Native | 1M+ Downloads",
+      "publisher": "App Store and Play Store",
+      "website": "http://www.splitcloud-app.com/",
+      "summary": "Share your headphones with who's next to you and stream two different tracks choosing from the SoundCloud® streaming platform. SplitCloud gives you two independent music players with adjustable volumes and playlist support. Scalable Backend for music charts and custom playlists in AWS Lambda + SQS + DynamoDB"
+    },
+    {
+      "name": "SplitBeats - iOS App | Objective-C",
       "publisher": "Apple AppStore",
       "website": "http://www.split-beats.com/",
       "summary": "SplitBeats is a free music iOS app that allows your device to manage two music players at same time, and play different tracks on each side when sharing headphones."
@@ -105,7 +125,12 @@
       "publisher": "Google Chrome Web Store",
       "website":"http://goo.gl/c3nn5J",
       "summary" : "Angular watchers is the ultimate AngularJS tool which tells you how many active watchers you currently have in your web app. It automatically updates the count so you can see a counter or a graph by opening the $$watchers panel inside Chrome Dev Tools."
-
+    },
+    {
+      "name": "jest-test-gen - CLI utility | Node.js | Typescript | AST",
+      "publisher": "npm",
+      "website": "https://www.npmjs.com/package/jest-test-gen",
+      "summary": "This tool will take a js/ts file as input and generate a jest unit test file next to it with all imports mocked and tests stubs for every class method and function exported."
     }
   ],
   "skills": [
@@ -116,7 +141,6 @@
         "HTML5",
         "CSS3",
         "Javascript",
-        "ES.Next",
         "ES6",
         "LESS",
         "SASS",
@@ -155,20 +179,21 @@
     },
     {
       "language": "French",
-      "fluency": "Fluent"
+      "fluency": "Bilingual"
     },
     {
       "language": "English",
-      "fluency": "Fluent"
+      "fluency": "Bilingual"
     }
   ],
   "interests": [
     {
       "name": "Development",
       "keywords": [
-        "Mobile Development",
+        "Mobile App Development",
+        "Distributed Systems",
         "Functional Programming",
-        "Reactive Programming",
+        "Scalable Cloud Architectures",
         "Audio Programming",
         "IoT"
       ]

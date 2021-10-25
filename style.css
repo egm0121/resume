@@ -34,15 +34,7 @@ li {
 line-height: 1.8;
 list-style: none;
 }
-li:before {
-content: "\f052";
-float: left;
-font: 13px Octicons;
-margin-top: 6px;
-margin-left: -20px;
-opacity: .1;
-position: absolute;
-}
+
 blockquote {
 border-left: 5px solid #e7e9ec;
 font-size: 14px;
@@ -123,6 +115,22 @@ margin-top: 8px;
 content: attr(href);
 }
 
+ul.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.keywords > li {
+	list-style: none;
+	background: #54afff;
+	border-radius: 0.4em;
+	margin: 0 0.4em 0.4em 0;
+	padding: 0.2em 0.6em;
+	color: white;
+}
+
 @media (min-width: 480px) {
 .strike-through {
 	border-top: 1px solid #f4f6f6;
@@ -185,3 +193,4 @@ h1 {
 	display: none;
 }
 }
+

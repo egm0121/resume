@@ -1,16 +1,16 @@
 {
   "name": "egm0121-resume-repo",
   "version": "1.0.0",
-  "description": "wkhtmltopdf -s A4 --zoom 2.5 --disable-smart-shrinking cv.html cv2.pdf",
+  "description": "personal resume generator with template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "resume serve & P1=$! npm run make-pdf & P2=$! wait $P1 $P2",
-    "make-pdf" : "wkhtmltopdf -s A4 --zoom 2.5 --disable-smart-shrinking http://localhost:4000 cv_resume_export.pdf"
+    "build": "resume serve --theme . & P1=$! npm run make-pdf & P2=$! wait $P1 $P2",
+    "make-pdf": "wkhtmltopdf -s A4 --zoom 2.5 --disable-smart-shrinking http://localhost:4000 cv_resume_export.pdf"
   },
-  "dependencies" :{
-    "resume-cli ":"0.4.19",
-    "handlebars": "^2.0.0-alpha.4"
+  "dependencies": {
+    "resume-cli": "3.0.5",
+    "handlebars": "4.7.7"
   },
   "repository": {
     "type": "git",

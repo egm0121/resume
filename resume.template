@@ -34,7 +34,7 @@
 					{{/label}}
 					{{/resume.basics}}
 				</div>
-				<div class="col-sm-3"><img src="http://git.local:8888/git/egm0121-resume-repo/profile.jpg"></div>
+				<div class="col-sm-3"><img src="../cv_files/profile.jpg"></div>
 			</div>
 		</div>
 	</header>
@@ -152,7 +152,7 @@
 				{{/summary}}
 				{{#if highlights.length}}
 				<h4>Highlights</h4>
-				<ul class="highlights">
+				<ul class="keywords">
 					{{#highlights}}
 					<li class="bullet">{{.}}</li>
 					{{/highlights}}
@@ -199,7 +199,7 @@
 				{{/summary}}
 				{{#if highlights.length}}
 				<h4>Highlights</h4>
-				<ul class="highlights">
+				<ul class="keywords">
 					{{#highlights}}
 					<li class="bullet">{{.}}</li>
 					{{/highlights}}
