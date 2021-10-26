@@ -34,7 +34,7 @@
     {
       "company": "8x8 Inc",
       "position": "Staff Software Engineer",
-      "website": "https://www.easycontactnow.com/",
+      "website": "https://www.8x8.com/products/apps",
       "startDate": "2018-11-02",
       "endDate": "2022-12-31",
       "summary": "Responsible for architecture and implementation of core product features for an hybrid web and desktop application built and distributed from the same source code. Emphasis on code base reusability, maintainability and extensibility.Code reviewing team members contributions.",
@@ -43,7 +43,7 @@
     {
       "company": "8x8 UK",
       "position": "Lead Frontend Developer - UK",
-      "website": "https://www.easycontactnow.com/",
+      "website": "https://www.8x8.com/uk",
       "startDate": "2015-05-01",
       "endDate": "2018-10-31",
       "summary": "Leading the frontend team, my core responsabilities involve ensuring frontend projects are delivered on time according to company standards, evaluating and making architectural and technologic choices for the frontend team, mentoring junior developers, ensuring all development is up to standards by coaching and code reviewing team members contributions.",
@@ -99,7 +99,18 @@
     }
   ],
   "awards": [
-
+    {
+      "title": "Key Contributor Award",
+      "date": "2016-07-01",
+      "awarder": "8x8 Inc.",
+      "summary": "Work on EasyContactNow infrastructure"
+    },
+    {
+      "title": "PHP Certified Engineer",
+      "date": "2008-11-18",
+      "awarder": "Zend Technologies",
+      "summary": "PHP Certification"
+    }
   ],
   "publications": [
     {
@@ -135,38 +146,47 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
+      "name": "Technologies",
       "level": "Master",
       "keywords": [
         "HTML5",
         "CSS3",
         "Javascript",
         "ES6",
-        "LESS",
-        "SASS",
-        "XML",
+        "WebSockets",
+        "Component Architecture",
         "JSON",
-        "REST",
-        "API",
+        "REST APIs",
+        "Serverless",
+        "AWS",
+        "JWT",
+        "OAUTH",
         "PHP",
         "OOP",
         "SQL",
-        "Redis",
+        "NoSQL",
+        "Cache databases",
         "Fronted performance",
-        "WebSockets"
+        "Software Architecture"
       ]
     },
     {
       "name": "Libraries and Frameworks",
       "level": "",
       "keywords": [
+        "React",
+        "Redux",
+        "React Native",
+        "Expo",
+        "Electron",
         "Socket.io",
         "Express",
         "Angular.js",
-        "React",
-        "React Native",
-        "Electron",
-        "Phonegap",
+        "AWS",
+        "Google Analytics",
+        "Webpack",
+        "Jest",
+        "Cypress",
         "Lodash",
         "Ramda"
       ]
