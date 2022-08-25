@@ -33,12 +33,12 @@
   "work": [
     {
       "company": "8x8 Inc",
-      "position": "Staff Software Engineer",
+      "position": "Principal Software Engineer",
       "website": "https://www.8x8.com/products/apps",
       "startDate": "2018-11-02",
-      "endDate": "2022-12-31",
-      "summary": "Responsible for architecture and implementation of core product features for an hybrid web and desktop application built and distributed from the same source code. Emphasis on code base reusability, maintainability and extensibility.Code reviewing team members contributions.",
-      "highlights": ["Electron", "React", "Redux", "WebRTC", "WebAssembly", "Cypress"]
+      "endDate": "2023-12-31",
+      "summary": "Responsible for architectural decisions and implementation of core product features and delivery of an hybrid web + desktop app and related libraries. Emphasis on code base modularization, maintainability and extensibility. Code review of team members contributions. Implementation of PoCs to quickly validate technical and product solutions.",
+      "highlights": ["Electron", "React", "Redux", "WebRTC", "WebAssembly", "WebHID", "Cypress"]
     },
     {
       "company": "8x8 UK",
@@ -100,6 +100,12 @@
   ],
   "awards": [
     {
+      "title": "AWS Certified Solutions Architect – Associate",
+      "date": "2021-12-05",
+      "awarder": "Amazon Web Services",
+      "summary": "https://www.credly.com/badges/25297a38-035c-478d-bebb-27297e0fe1ba"
+    },
+    {
       "title": "Key Contributor Award",
       "date": "2016-07-01",
       "awarder": "8x8 Inc.",
@@ -138,7 +144,7 @@
       "summary" : "Angular watchers is the ultimate AngularJS tool which tells you how many active watchers you currently have in your web app. It automatically updates the count so you can see a counter or a graph by opening the $$watchers panel inside Chrome Dev Tools."
     },
     {
-      "name": "jest-test-gen - CLI utility | Node.js | Typescript | AST",
+      "name": "jest-test-gen - CLI utility | Node.js | Typescript | AST | VSCode extension",
       "publisher": "npm",
       "website": "https://www.npmjs.com/package/jest-test-gen",
       "summary": "This tool will take a js/ts file as input and generate a jest unit test file next to it with all imports mocked and tests stubs for every class method and function exported."

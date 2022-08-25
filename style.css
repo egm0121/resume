@@ -65,10 +65,9 @@ margin-top: 30px;
 	display: block; page-break-before: always;
 }
 #header {
-background: #ececec;
+background: linear-gradient(180deg, rgba(168,211,254,1) 0%, rgba(255,255,255,1) 62%);
 padding: 25px 0;
 margin-bottom: 30px;
-
 }
 #header img{
 	position: relative;

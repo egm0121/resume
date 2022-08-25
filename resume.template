@@ -264,7 +264,7 @@
 	{{#if resume.awards.length}}
 	<section id="awards" class="row">
 		<aside class="col-sm-3">
-			<h3>Awards</h3>
+			<h3>Certifications</h3>
 		</aside>
 		<div class="col-sm-9">
 			<div class="row">
