@@ -7,7 +7,7 @@
     "phone": "(+1) 646·953·7352",
     "website": ["https://github.com/egm0121"],
     "summary": ["I'm an experienced Software Developer having previously worked on complex web, desktop and mobile apps in the enterprise travel booking and unified communications industries.",
-                "My goal is to produce modular, reusable code leading to responsive UIs and performant applications.",
+                "My goal is to produce modular, reusable code leading to responsive UIs and performant applications.",
                 "In my free time I like to build and launch software products, using lean methodology and experimentation to achieve growth and product-market fit."
               ],
     "location": {
@@ -120,6 +120,12 @@
   ],
   "publications": [
     {
+      "name": "jest-test-gen - Node.js | Typescript | AST | VSCode Ext.",
+      "publisher": "npm",
+      "website": "https://www.npmjs.com/package/jest-test-gen",
+      "summary": "This tool will take a js/ts file as input and generate a jest unit test file next to it with all imports mocked and tests stubs for every class method and function exported."
+    },
+    {
       "name" : "SpeedSound | Expo | Typescript",
       "publisher": "App Store and Play Store",
       "website": "https://www.speedsound.app/",
@@ -132,38 +138,32 @@
       "summary": "Share your headphones with who's next to you and stream two different tracks choosing from the SoundCloud® streaming platform. SplitCloud gives you two independent music players with adjustable volumes and playlist support. Scalable Backend for music charts and custom playlists in AWS Lambda + SQS + DynamoDB"
     },
     {
-      "name": "SplitBeats - iOS App | Objective-C",
-      "publisher": "Apple AppStore",
-      "website": "http://www.split-beats.com/",
-      "summary": "SplitBeats is a free music iOS app that allows your device to manage two music players at same time, and play different tracks on each side when sharing headphones."
-    },
-    {
       "name": "$$Watchers - Chrome Dev Tools Extension",
       "publisher": "Google Chrome Web Store",
       "website":"http://goo.gl/c3nn5J",
       "summary" : "Angular watchers is the ultimate AngularJS tool which tells you how many active watchers you currently have in your web app. It automatically updates the count so you can see a counter or a graph by opening the $$watchers panel inside Chrome Dev Tools."
     },
     {
-      "name": "jest-test-gen - CLI utility | Node.js | Typescript | AST | VSCode extension",
-      "publisher": "npm",
-      "website": "https://www.npmjs.com/package/jest-test-gen",
-      "summary": "This tool will take a js/ts file as input and generate a jest unit test file next to it with all imports mocked and tests stubs for every class method and function exported."
+      "name": "SplitBeats - iOS App | Objective-C",
+      "publisher": "Apple AppStore",
+      "website": "http://www.split-beats.com/",
+      "summary": "SplitBeats is a free music iOS app that allows your device to manage two music players at same time, and play different tracks on each side when sharing headphones."
     }
   ],
   "skills": [
     {
       "name": "Technologies",
-      "level": "Master",
+      "level": "",
       "keywords": [
         "HTML5",
         "CSS3",
         "Javascript",
-        "ES6",
         "WebSockets",
         "Component Architecture",
         "JSON",
         "REST APIs",
         "Serverless",
+        "Python",
         "AWS",
         "JWT",
         "OAUTH",
@@ -188,13 +188,13 @@
         "Socket.io",
         "Express",
         "Angular.js",
-        "AWS",
         "Google Analytics",
         "Webpack",
         "Jest",
         "Cypress",
-        "Lodash",
-        "Ramda"
+        "Immutable",
+        "pandas",
+        "statsmodel"
       ]
     }
   ],
