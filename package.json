@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "resume serve --theme .",
-    "build-web": "resume export index.html --theme . ",
-    "build-pdf": "resume export cv.pdf --theme . --format pdf",
+    "start": "resume serve --theme . -d docs",
+    "build-web": "resume export ./docs/index.html --theme . ",
+    "build-pdf": "resume export ./docs/cv.pdf --theme . --format pdf",
     "build-all": "resume serve --theme . & P1=$! npm run make-pdf & P2=$! wait $P1 $P2",
     "build-pdf-legacy": "wkhtmltopdf -s A4 --zoom 2.5 --disable-smart-shrinking http://localhost:4000 cv_resume_export.pdf"
   },
   "dependencies": {
-    "resume-cli": "3.0.5",
+    "resume-cli": "3.1.2",
     "handlebars": "4.7.7"
   },
   "repository": {
