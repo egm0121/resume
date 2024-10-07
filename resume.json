@@ -5,28 +5,33 @@
     "picture": "./profile.jpg",
     "email": "egm0121[at]gmail.com",
     "phone": "(+1) 646·953·7352",
-    "website": ["https://github.com/egm0121"],
+    "website": ["https://egm0121.com"],
     "summary": ["I'm an experienced Software Developer having previously worked on complex web, desktop and mobile apps in the enterprise travel booking and unified communications industries.",
                 "My goal is to produce modular, reusable code leading to responsive UIs and performant applications.",
                 "In my free time I like to build and launch software products, using lean methodology and experimentation to achieve growth and product-market fit."
               ],
     "location": {
-      "address": "550 W 54th street",
-      "postalCode": "10019",
-      "city": "New York",
+      "address": "1504 Bay rd",
+      "postalCode": "33139",
+      "city": "Miami Beach",
       "countryCode": "US",
-      "region": "New York"
+      "region": "Florida"
     },
     "profiles": [
       {
-        "network": "FB/Messenger",
+        "network": "Github",
         "username": "egm0121",
-        "url": "https://fb.me/egm0121"
+        "url": "https://github.com/egm0121"
       },
       {
         "network": "LinkedIn",
         "username": "giuliodellorbo",
         "url": "https://www.linkedin.com/in/giuliodellorbo"
+      },
+      {
+        "network": "Download CV",
+        "username": "giulio_dellorbo_cv.pdf",
+        "url": "./cv.pdf"
       }
     ]
   },

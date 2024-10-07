@@ -1,10 +1,14 @@
 @import url(
 https://fonts.googleapis.com/css?family=Lato:400,700
 );
+@import url(
+https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap
+);
 body {
 background: #fff;
 font-family: Lato, sans-serif;
 margin: 0 0 80px;
+font-size: 16px;
 }
 a {
 color: #428bca;
@@ -15,7 +19,7 @@ color: #2a6496;
 text-decoration: none;
 }
 p {
-line-height: 1.5;
+line-height: 1.6;
 margin: 0;
 }
 p + p {
@@ -25,7 +29,9 @@ h1,
 h2,
 h3,
 h4 {
-margin-top: 0
+font-family: "Playfair Display", serif;
+margin-top: 0;
+font-weight: 600;
 }
 section {
 margin-top: 30px;
@@ -65,19 +71,22 @@ margin-top: 30px;
 	display: block; page-break-before: always;
 }
 #header {
-background: linear-gradient(180deg, rgba(168,211,254,1) 0%, rgba(255,255,255,1) 62%);
-padding: 25px 0;
-margin-bottom: 30px;
-
+	background: linear-gradient(180deg, #82bdf0 0%, rgba(255, 255, 255, 1) 75%);
+	padding: 25px 0;
+	margin-bottom: 30px;
 }
 #header img{
 	position: relative;
 	height: 150px;
-	margin-top: -10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 40px 40px -7px;
+    border: 1px solid #fff;
 }
 #header h2 {
-color: #95a5a6;
-font-size: 24px;
+    color: #757575;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 #content h3 {
 color: #a0a09d;
@@ -128,6 +137,7 @@ ul.keywords {
 	border-radius: 0.4em;
 	margin: 0 0.4em 0.4em 0;
 	padding: 0.2em 0.6em;
+	font-size: 1.3rem;
 	color: white;
 }
 

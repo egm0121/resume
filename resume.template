@@ -67,14 +67,6 @@
 				<div class="phone">{{.}}</div>
 			</div>
 			{{/phone}}
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				{{#each website}}
-				<div class="website">
-					<a href="{{.}}">{{.}}</a>
-				</div>
-				{{/each}}
-			</div>
 			</div>
 		</div>
 	</section>
@@ -264,7 +256,7 @@
 	{{#if resume.awards.length}}
 	<section id="awards" class="row">
 		<aside class="col-sm-3">
-			<h3>Certifications</h3>
+			<h3>Certifications & Awards</h3>
 		</aside>
 		<div class="col-sm-9">
 			<div class="row">
@@ -301,7 +293,7 @@
 	{{#if resume.publications.length}}
 	<section id="publications" class="row">
 		<aside class="col-sm-3">
-			<h3>Projects</h3>
+			<h3>Personal Projects</h3>
 		</aside>
 		<div class="col-sm-9">
 			<div class="row">
