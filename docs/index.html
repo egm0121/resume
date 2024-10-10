@@ -102,9 +102,15 @@ margin-top: 30px;
     font-weight: 400;
 }
 #content h3 {
-color: #a0a09d;
-font-size: 26px;
-margin-top: -4px;
+	color: #a0a09d;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content h4 {
+	font-size: 20px;
+}
+#content h5 {
+	font-weight: 600;
 }
 #content aside {
 text-align: right;
@@ -155,69 +161,68 @@ ul.keywords {
 }
 
 @media (min-width: 480px) {
-.strike-through {
-	border-top: 1px solid #f4f6f6;
-	height: 20px;
-	margin-top: 12px;
-	margin-bottom: -2px;
-	position: relative;
-}
-.strike-through span,
-.strike-through a {
-	background: #fff;
-	position: absolute;
-}
-.strike-through span:first-child {
-	padding-right: 20px;
-	margin-top: -12px;
-}
-.strike-through span + span {
-	font-size: 14px;
-	margin-top: -10px;
-	padding-left: 20px;
-	right: 0;
-}
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 16px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
 }
 @media (max-width: 768px) {
-.col-sm-6:last-child {
-	margin-bottom: 0px;
-}
-#content aside {
-	margin-bottom: 20px;
-	padding-right: 0;
-	text-align: left;
-}
-#publications .website a:before {
-	content: "View publication";
-}
-#header img{
-	display: none;
-}
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "Learn more";
+	}
 }
 @media (max-width: 480px) {
-h1 {
-	font-size: 26px;
-}
-.date {
-	font-size: 14px;
-	margin-bottom: 5px;
-}
-.strike-through span:first-child {
-	margin-bottom: 7px;
-}
-.strike-through span {
-	display: block;
-}
-#header {
-	margin-bottom: 10px;
-	padding: 40px 0;
-}
-#actions {
-	display: none;
-}
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
 }
 
-
+@page {
+	margin: 1.5cm;
+}
 	</style>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -303,11 +308,21 @@ h1 {
 				</div>
 				<div class="col-sm-6">
 					<strong class="network">
+						Medium
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://medium.com/@egm0121">Giulio Dellorbo</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
 						Download CV
 					</strong>
 					<div class="username">
 						<div class="url">
-							<a href="./cv.pdf">giulio_dellorbo_cv.pdf</a>
+							<a href="./cv.pdf">cv.pdf</a>
 						</div>
 					</div>
 				</div>
@@ -330,7 +345,7 @@ h1 {
 					</span>
 				</h4>
 				<div class="website pull-right">
-					<a href="https://www.8x8.com/products/apps">https://www.8x8.com/products/apps</a>
+					<a href="https://www.8x8.com/">https://www.8x8.com/</a>
 				</div>
 				<div class="position">
 					Principal Software Engineer
@@ -338,7 +353,7 @@ h1 {
 				<div class="summary">
 					<p>Responsible for architectural decisions and implementation of core product features and delivery of an hybrid web + desktop app and related libraries. Emphasis on code base modularization, maintainability and extensibility. Code review of team members contributions. Implementation of PoCs to quickly validate technical and product solutions.</p>
 				</div>
-				<h4>Highlights</h4>
+				<h5>Highlights</h5>
 				<ul class="keywords">
 					<li class="bullet">Electron</li>
 					<li class="bullet">React</li>
@@ -366,7 +381,7 @@ h1 {
 				<div class="summary">
 					<p>Leading the frontend team, my core responsabilities involve ensuring frontend projects are delivered on time according to company standards, evaluating and making architectural and technologic choices for the frontend team, mentoring junior developers, ensuring all development is up to standards by coaching and code reviewing team members contributions.</p>
 				</div>
-				<h4>Highlights</h4>
+				<h5>Highlights</h5>
 				<ul class="keywords">
 					<li class="bullet">WebSockets</li>
 					<li class="bullet">ES6</li>
@@ -391,7 +406,7 @@ h1 {
 				<div class="summary">
 					<p>Delivery of greenfield projects and features, existing code base refactors according to company standards, evaluating and making architectural and technologic choices, providing estimates </p>
 				</div>
-				<h4>Highlights</h4>
+				<h5>Highlights</h5>
 				<ul class="keywords">
 					<li class="bullet">Browser Extension</li>
 					<li class="bullet">Angular</li>
@@ -416,12 +431,12 @@ h1 {
 				<div class="summary">
 					<p>Worked as a frontend developer to provide a javascript widget SDK allowing easy integration results from the correlation engine into clients websites. focus on browser compatibility, minimizing bandwith and runtime performance impact for end-users.</p>
 				</div>
-				<h4>Highlights</h4>
+				<h5>Highlights</h5>
 				<ul class="keywords">
-					<li class="bullet">cross-browser</li>
-					<li class="bullet">aws</li>
-					<li class="bullet">jsonp</li>
-					<li class="bullet">thirdparty widget</li>
+					<li class="bullet">Browser Compat.</li>
+					<li class="bullet">AWS</li>
+					<li class="bullet">JSONP</li>
+					<li class="bullet">Thirdparty code</li>
 				</ul>
 			</div>
 
@@ -441,14 +456,14 @@ h1 {
 				<div class="summary">
 					<p>Worked on backend and frontend performance optimization and feature implementations for the company core application, enterprise travel management solution, currently used by enterprise customers and thousands of travel agencies for the italian, french, saudi arabia market. </p>
 				</div>
-				<h4>Highlights</h4>
+				<h5>Highlights</h5>
 				<ul class="keywords">
-					<li class="bullet">php</li>
-					<li class="bullet">redis</li>
-					<li class="bullet">Rest</li>
+					<li class="bullet">PHP</li>
+					<li class="bullet">Redis</li>
+					<li class="bullet">REST</li>
 					<li class="bullet">SOAP</li>
-					<li class="bullet">Phantomjs</li>
-					<li class="bullet">frontend performance</li>
+					<li class="bullet">Phantom.js</li>
+					<li class="bullet">Frontend perf.</li>
 				</ul>
 			</div>
 			</div>
@@ -490,7 +505,7 @@ h1 {
 
 			<div class="col-sm-12 ">
 				<h4 class="strike-through">
-					<span>AWS Certified Solutions Architect – Associate</span>
+					<span>AWS Certified Solutions Architect - Associate</span>
 				</h4>
 				<div class="date pull-right">
 					<em>Awarded</em>
@@ -551,20 +566,39 @@ h1 {
 
 			<div class="col-sm-12 ">
 				<h4 class="strike-through">
-					<span>jest-test-gen - Node.js | Typescript | AST | VSCode Ext.</span>
+					<span>Mailbunny.ai | Faster newsletter reading</span>
 					<span class="date">
 						
 					</span>
 				</h4>
 				<div class="website pull-right">
-					<a href="https://www.npmjs.com/package/jest-test-gen"></a>
+					<a href="https://ai.google.dev/competition/projects/mailbunny"></a>
 				</div>
 				<div class="publisher">
-					<em>Published by</em>
+					<em>Available on</em>
+					<strong>Web</strong>
+				</div>
+				<div class="summary">
+					<p>Built this LLM powered tool as a submission for the Google Gemini Dev competion. MailBunny helps relieving email fatigue and accelerates getting to inbox zero by reading incoming newsletter and sending you a summary of the most relevant content in a single daily email. Built with Google gemini-1.5-flash model, AWS Lambda, DynamDB, SQS, S3 and SES (Simple Email Service) for receiving inbound emails on custom @mailbunny.ai aliases.</p>
+				</div>
+			</div>
+
+			<div class="col-sm-12 ">
+				<h4 class="strike-through">
+					<span>jest-test-gen | Unit test boilerplate generator</span>
+					<span class="date">
+						
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://github.com/egm0121/jest-test-gen"></a>
+				</div>
+				<div class="publisher">
+					<em>Available on</em>
 					<strong>npm</strong>
 				</div>
 				<div class="summary">
-					<p>This tool will take a js/ts file as input and generate a jest unit test file next to it with all imports mocked and tests stubs for every class method and function exported.</p>
+					<p>Wrote a tool to generate boilerplate of a jest unit test file for an existing Javascript or Typescript source file with all imports mocked and a test template for every class, POJOs or functions exported. It also supports React components both classic and functional. The tool is written in typescript and uses its parser to walk the AST of a source file and generate testing code based on what is exported. It got featured by the popular Node Weekly newsletter and got 180+ stars on GitHub.</p>
 				</div>
 			</div>
 
@@ -579,7 +613,7 @@ h1 {
 					<a href="https://www.speedsound.app/"></a>
 				</div>
 				<div class="publisher">
-					<em>Published by</em>
+					<em>Available on</em>
 					<strong>App Store and Play Store</strong>
 				</div>
 				<div class="summary">
@@ -598,7 +632,7 @@ h1 {
 					<a href="http://www.splitcloud-app.com/"></a>
 				</div>
 				<div class="publisher">
-					<em>Published by</em>
+					<em>Available on</em>
 					<strong>App Store and Play Store</strong>
 				</div>
 				<div class="summary">
@@ -617,7 +651,7 @@ h1 {
 					<a href="http://goo.gl/c3nn5J"></a>
 				</div>
 				<div class="publisher">
-					<em>Published by</em>
+					<em>Available on</em>
 					<strong>Google Chrome Web Store</strong>
 				</div>
 				<div class="summary">
@@ -636,7 +670,7 @@ h1 {
 					<a href="http://www.split-beats.com/"></a>
 				</div>
 				<div class="publisher">
-					<em>Published by</em>
+					<em>Available on</em>
 					<strong>Apple AppStore</strong>
 				</div>
 				<div class="summary">
@@ -647,7 +681,7 @@ h1 {
 		</div>
 	</section>
 
-	<section id="skills" class="row page-break-print">
+	<section id="skills" class="row">
 		<aside class="col-sm-3">
 			<h3>Skills</h3>
 		</aside>
@@ -662,22 +696,27 @@ h1 {
 					<li>HTML5</li>
 					<li>CSS3</li>
 					<li>Javascript</li>
+					<li>Typescript</li>
 					<li>WebSockets</li>
-					<li>Component Architecture</li>
 					<li>JSON</li>
 					<li>REST APIs</li>
+					<li>JWT</li>
+					<li>OAuth</li>
+					<li>OTP</li>
 					<li>Serverless</li>
 					<li>Python</li>
+					<li>Docker</li>
 					<li>AWS</li>
-					<li>JWT</li>
-					<li>OAUTH</li>
 					<li>PHP</li>
 					<li>OOP</li>
 					<li>SQL</li>
 					<li>NoSQL</li>
 					<li>Cache databases</li>
-					<li>Fronted performance</li>
+					<li>Frontend performance</li>
+					<li>Browser Extensions</li>
 					<li>Software Architecture</li>
+					<li>UI Components</li>
+					<li>Event Driven Architecture</li>
 				</ul>
 			</div>
 
@@ -688,8 +727,10 @@ h1 {
 				<ul class="keywords">
 					<li>React</li>
 					<li>Redux</li>
+					<li>Immutable.js</li>
 					<li>React Native</li>
 					<li>Expo</li>
+					<li>Gatsby</li>
 					<li>Electron</li>
 					<li>Socket.io</li>
 					<li>Express</li>
@@ -698,9 +739,13 @@ h1 {
 					<li>Webpack</li>
 					<li>Jest</li>
 					<li>Cypress</li>
-					<li>Immutable</li>
+					<li>Playwright</li>
+					<li>Puppeteer</li>
 					<li>pandas</li>
+					<li>numpy</li>
 					<li>statsmodel</li>
+					<li>pyplot</li>
+					<li>seaborn</li>
 				</ul>
 			</div>
 			</div>

@@ -89,9 +89,15 @@ margin-top: 30px;
     font-weight: 400;
 }
 #content h3 {
-color: #a0a09d;
-font-size: 26px;
-margin-top: -4px;
+	color: #a0a09d;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content h4 {
+	font-size: 20px;
+}
+#content h5 {
+	font-weight: 600;
 }
 #content aside {
 text-align: right;
@@ -142,65 +148,65 @@ ul.keywords {
 }
 
 @media (min-width: 480px) {
-.strike-through {
-	border-top: 1px solid #f4f6f6;
-	height: 20px;
-	margin-top: 12px;
-	margin-bottom: -2px;
-	position: relative;
-}
-.strike-through span,
-.strike-through a {
-	background: #fff;
-	position: absolute;
-}
-.strike-through span:first-child {
-	padding-right: 20px;
-	margin-top: -12px;
-}
-.strike-through span + span {
-	font-size: 14px;
-	margin-top: -10px;
-	padding-left: 20px;
-	right: 0;
-}
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 16px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
 }
 @media (max-width: 768px) {
-.col-sm-6:last-child {
-	margin-bottom: 0px;
-}
-#content aside {
-	margin-bottom: 20px;
-	padding-right: 0;
-	text-align: left;
-}
-#publications .website a:before {
-	content: "View publication";
-}
-#header img{
-	display: none;
-}
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "Learn more";
+	}
 }
 @media (max-width: 480px) {
-h1 {
-	font-size: 26px;
-}
-.date {
-	font-size: 14px;
-	margin-bottom: 5px;
-}
-.strike-through span:first-child {
-	margin-bottom: 7px;
-}
-.strike-through span {
-	display: block;
-}
-#header {
-	margin-bottom: 10px;
-	padding: 40px 0;
-}
-#actions {
-	display: none;
-}
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
 }
 
+@page {
+	margin: 1.5cm;
+}

@@ -151,7 +151,7 @@
 				</div>
 				{{/summary}}
 				{{#if highlights.length}}
-				<h4>Highlights</h4>
+				<h5>Highlights</h5>
 				<ul class="keywords">
 					{{#highlights}}
 					<li class="bullet">{{.}}</li>
@@ -313,7 +313,7 @@
 				{{/website}}
 				{{#publisher}}
 				<div class="publisher">
-					<em>Published by</em>
+					<em>Available on</em>
 					<strong>{{.}}</strong>
 				</div>
 				{{/publisher}}
@@ -330,7 +330,7 @@
 	{{/if}}
 
 	{{#if resume.skills.length}}
-	<section id="skills" class="row page-break-print">
+	<section id="skills" class="row">
 		<aside class="col-sm-3">
 			<h3>Skills</h3>
 		</aside>

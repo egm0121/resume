@@ -29,8 +29,13 @@
         "url": "https://www.linkedin.com/in/giuliodellorbo"
       },
       {
+        "network": "Medium",
+        "username": "Giulio Dellorbo",
+        "url": "https://medium.com/@egm0121"
+      },
+      {
         "network": "Download CV",
-        "username": "giulio_dellorbo_cv.pdf",
+        "username": "cv.pdf",
         "url": "./cv.pdf"
       }
     ]
@@ -39,7 +44,7 @@
     {
       "company": "8x8 Inc",
       "position": "Principal Software Engineer",
-      "website": "https://www.8x8.com/products/apps",
+      "website": "https://www.8x8.com/",
       "startDate": "2018-11-02",
       "endDate": "2023-12-31",
       "summary": "Responsible for architectural decisions and implementation of core product features and delivery of an hybrid web + desktop app and related libraries. Emphasis on code base modularization, maintainability and extensibility. Code review of team members contributions. Implementation of PoCs to quickly validate technical and product solutions.",
@@ -71,10 +76,10 @@
       "endDate": "2012-09-01",
       "summary": "Worked as a frontend developer to provide a javascript widget SDK allowing easy integration results from the correlation engine into clients websites. focus on browser compatibility, minimizing bandwith and runtime performance impact for end-users.",
       "highlights": [
-        "cross-browser",
-        "aws",
-        "jsonp",
-        "thirdparty widget"
+        "Browser Compat.",
+        "AWS",
+        "JSONP",
+        "Thirdparty code"
       ]
     },
     {
@@ -85,12 +90,12 @@
       "endDate": "2013-06-01",
       "summary": "Worked on backend and frontend performance optimization and feature implementations for the company core application, enterprise travel management solution, currently used by enterprise customers and thousands of travel agencies for the italian, french, saudi arabia market. ",
       "highlights": [
-        "php",
-        "redis",
-        "Rest",
+        "PHP",
+        "Redis",
+        "REST",
         "SOAP",
-        "Phantomjs",
-        "frontend performance"
+        "Phantom.js",
+        "Frontend perf."
       ]
     }
   ],
@@ -105,7 +110,7 @@
   ],
   "awards": [
     {
-      "title": "AWS Certified Solutions Architect – Associate",
+      "title": "AWS Certified Solutions Architect - Associate",
       "date": "2021-12-05",
       "awarder": "Amazon Web Services",
       "summary": "https://www.credly.com/badges/25297a38-035c-478d-bebb-27297e0fe1ba"
@@ -125,10 +130,16 @@
   ],
   "publications": [
     {
-      "name": "jest-test-gen - Node.js | Typescript | AST | VSCode Ext.",
+      "name": "Mailbunny.ai | Faster newsletter reading",
+      "publisher": "Web",
+      "website": "https://ai.google.dev/competition/projects/mailbunny",
+      "summary": "Built this LLM powered tool as a submission for the Google Gemini Dev competion. MailBunny helps relieving email fatigue and accelerates getting to inbox zero by reading incoming newsletter and sending you a summary of the most relevant content in a single daily email. Built with Google gemini-1.5-flash model, AWS Lambda, DynamDB, SQS, S3 and SES (Simple Email Service) for receiving inbound emails on custom @mailbunny.ai aliases."
+    },
+    {
+      "name": "jest-test-gen | Unit test boilerplate generator",
       "publisher": "npm",
-      "website": "https://www.npmjs.com/package/jest-test-gen",
-      "summary": "This tool will take a js/ts file as input and generate a jest unit test file next to it with all imports mocked and tests stubs for every class method and function exported."
+      "website": "https://github.com/egm0121/jest-test-gen",
+      "summary": "Wrote a tool to generate boilerplate of a jest unit test file for an existing Javascript or Typescript source file with all imports mocked and a test template for every class, POJOs or functions exported. It also supports React components both classic and functional. The tool is written in typescript and uses its parser to walk the AST of a source file and generate testing code based on what is exported. It got featured by the popular Node Weekly newsletter and got 180+ stars on GitHub."
     },
     {
       "name" : "SpeedSound | Expo | Typescript",
@@ -163,22 +174,27 @@
         "HTML5",
         "CSS3",
         "Javascript",
+        "Typescript",
         "WebSockets",
-        "Component Architecture",
         "JSON",
         "REST APIs",
+        "JWT",
+        "OAuth",
+        "OTP",
         "Serverless",
         "Python",
+        "Docker",
         "AWS",
-        "JWT",
-        "OAUTH",
         "PHP",
         "OOP",
         "SQL",
         "NoSQL",
         "Cache databases",
-        "Fronted performance",
-        "Software Architecture"
+        "Frontend performance",
+        "Browser Extensions",
+        "Software Architecture",
+        "UI Components",
+        "Event Driven Architecture"
       ]
     },
     {
@@ -187,8 +203,10 @@
       "keywords": [
         "React",
         "Redux",
+        "Immutable.js",
         "React Native",
         "Expo",
+        "Gatsby",
         "Electron",
         "Socket.io",
         "Express",
@@ -197,9 +215,13 @@
         "Webpack",
         "Jest",
         "Cypress",
-        "Immutable",
+        "Playwright",
+        "Puppeteer",
         "pandas",
-        "statsmodel"
+        "numpy",
+        "statsmodel",
+        "pyplot",
+        "seaborn"
       ]
     }
   ],
