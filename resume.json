@@ -74,9 +74,12 @@
       "website": "https://github.com/upcloo",
       "startDate": "2012-07-01",
       "endDate": "2012-09-01",
-      "summary": "Worked as a frontend developer to provide a javascript widget SDK allowing easy integration results from the correlation engine into clients websites. focus on browser compatibility, minimizing bandwith and runtime performance impact for end-users.",
+      "summary": "As the main developer on the intergation widget I've gathered the business requirements, planned and implemented an async-loaded third party floating UI widget that was used by customer websites to display a list of related content pages powered by the correlation engine running in the backend. Challenges included keeping a small code footprint and make the widget was lazy loaded without hampering host website performance, handle broad browser compatibility (IE7 still had market share at that time) and preventing css styling conflicts and JS libraries interference. The final solution was a one line embeddable script tag that would load the widget and allow website admins to specify site configurations..",
       "highlights": [
         "Browser Compat.",
+        "Async-loading",
+        "CORS",
+        "CSS3",
         "AWS",
         "JSONP",
         "Thirdparty code"
@@ -88,7 +91,7 @@
       "website": "http://www.contur.it/",
       "startDate": "2011-11-01",
       "endDate": "2013-06-01",
-      "summary": "Worked on backend and frontend performance optimization and feature implementations for the company core application, enterprise travel management solution, currently used by enterprise customers and thousands of travel agencies for the italian, french, saudi arabia market. ",
+      "summary": "Worked on backend and frontend performance optimization and feature implementations for the company core application, enterprise travel management solution.On the backend side I’ve worked on new and existing integration via SOAP web services to communicate with GDS (Global Distribution System) systems. Worked on a solution to maintain a pool of valid session tokens and API response caching to maximize performance and reduce operational costs when requesting data from booking APIs that where billing on a api call model. I've also gained experience in SQL database modelling and query optimization. Implemented storerd procedures and caching. Frontend-wise, I've converted part of multi-page travel booking webapp to a single page experience with xhr requests, dynamic table components and maps based UIs. To organize the code base I've implemented a lightweight js library based on the cetralized pub-sub pattern to enhance frontend code modularization and communication between components. At the time jQuery was the most popular frontend library and state management or components frameworks had not been created yet.I've also worked on a Node.js + PhantomJS based headless browser integration test suite replicating end-user flows in our testing environment.",
       "highlights": [
         "PHP",
         "Redis",
