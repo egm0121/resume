@@ -71,20 +71,38 @@ margin-top: 30px;
 	display: block; page-break-before: always;
 }
 #header {
-	background: linear-gradient(180deg, #82bdf0 0%, rgba(255, 255, 255, 1) 75%);
-	padding: 25px 0;
-	margin-bottom: 30px;
+	background: linear-gradient(243deg, #e3f2ff 0%, rgb(84 175 254) 75%);
+	padding: 40px 0;
+	border-bottom: 2px #e0e0e0 solid;
 }
-#header img{
+#header .profile-container {
 	position: relative;
 	height: 150px;
+	width: 150px;
+	overflow: hidden;
     margin-top: 10px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 40px 40px -7px;
     border: 1px solid #fff;
 }
+
+#header .profile-container img {
+	position: relative;
+	width: 100%;
+	transform-origin: center;
+	transition: filter 1s linear, transform 0.5s ease-in;
+	filter: blur(20px);
+}
+#header .profile-container img:hover {
+	transform: scale(1.5);
+}
+
+.loaded #header .profile-container img {
+	filter: blur(0px);
+}
+
 #header h2 {
-    color: #757575;
+    color: #555555;
     font-size: 2.5rem;
     font-weight: 400;
 }
@@ -185,9 +203,7 @@ ul.keywords {
 	}
 }
 @media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
+
 	.date {
 		font-size: 14px;
 		margin-bottom: 5px;
@@ -198,14 +214,14 @@ ul.keywords {
 	.strike-through span {
 		display: block;
 	}
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
+	#header .profile-container {
+		margin-top: 30px;
 	}
 	#actions {
 		display: none;
 	}
 }
+
 
 @page {
 	margin: 1.5cm;

@@ -84,20 +84,38 @@ margin-top: 30px;
 	display: block; page-break-before: always;
 }
 #header {
-	background: linear-gradient(180deg, #82bdf0 0%, rgba(255, 255, 255, 1) 75%);
-	padding: 25px 0;
-	margin-bottom: 30px;
+	background: linear-gradient(243deg, #e3f2ff 0%, rgb(84 175 254) 75%);
+	padding: 40px 0;
+	border-bottom: 2px #e0e0e0 solid;
 }
-#header img{
+#header .profile-container {
 	position: relative;
 	height: 150px;
+	width: 150px;
+	overflow: hidden;
     margin-top: 10px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 40px 40px -7px;
     border: 1px solid #fff;
 }
+
+#header .profile-container img {
+	position: relative;
+	width: 100%;
+	transform-origin: center;
+	transition: filter 1s linear, transform 0.5s ease-in;
+	filter: blur(20px);
+}
+#header .profile-container img:hover {
+	transform: scale(1.5);
+}
+
+.loaded #header .profile-container img {
+	filter: blur(0px);
+}
+
 #header h2 {
-    color: #757575;
+    color: #555555;
     font-size: 2.5rem;
     font-weight: 400;
 }
@@ -198,9 +216,7 @@ ul.keywords {
 	}
 }
 @media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
+
 	.date {
 		font-size: 14px;
 		margin-bottom: 5px;
@@ -211,14 +227,14 @@ ul.keywords {
 	.strike-through span {
 		display: block;
 	}
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
+	#header .profile-container {
+		margin-top: 30px;
 	}
 	#actions {
 		display: none;
 	}
 }
+
 
 @page {
 	margin: 1.5cm;
@@ -234,7 +250,7 @@ ul.keywords {
 		gtag('config', 'G-NSDH75PFR4');
 	</script>
 	</head>
-	<body>
+	<body onload="document.body.classList.add('loaded')">
 
 	<header id="header">
 		<div class="container">
@@ -247,7 +263,11 @@ ul.keywords {
 						Staff Software Engineer
 					</h2>
 				</div>
-				<div class="col-sm-3"><img src="./profile.jpg"></div>
+				<div class="col-sm-3">
+					<div class="profile-container">
+						<img src="./profile.jpg">
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -341,7 +361,7 @@ ul.keywords {
 				<h4 class="strike-through">
 					<span>8x8 Inc</span>
 					<span class="date">
-						2018-11-02 — 2023-12-31
+						2018-11-02 — 2025-12-31
 					</span>
 				</h4>
 				<div class="website pull-right">
@@ -351,7 +371,7 @@ ul.keywords {
 					Principal Software Engineer
 				</div>
 				<div class="summary">
-					<p>Responsible for architectural decisions and implementation of core product features and delivery of an hybrid web + desktop app and related libraries. Emphasis on code base modularization, maintainability and extensibility. Code review of team members contributions. Implementation of PoCs to quickly validate technical and product solutions.</p>
+					<p>Responsible for designing and executing an incremental transition for core features of a production application written in Adobe AIR framework into a JS based codebase powering desktop and web apps using Electron and the React ecosystem. Identified technical debt and architectural improvements and created actionable engineering tasks. In depth code review of team members contributions. Authored internal tools such as CLI and Browser Extension to improve the dev. experience, testing and speed-up troubleshooting of production issues.Worked on Desktop specific features such as: OS-specific installers, dynamic libraries, auto-updates, and custom protocol handling. Served as technical point of contact for new integrations and PoCs with partners such as Citrix, Microsoft and Google.</p>
 				</div>
 				<h5>Highlights</h5>
 				<ul class="keywords">
@@ -362,6 +382,7 @@ ul.keywords {
 					<li class="bullet">WebAssembly</li>
 					<li class="bullet">WebHID</li>
 					<li class="bullet">Cypress</li>
+					<li class="bullet">Playwright</li>
 				</ul>
 			</div>
 
@@ -379,11 +400,12 @@ ul.keywords {
 					Lead Frontend Developer - UK
 				</div>
 				<div class="summary">
-					<p>Leading the frontend team, my core responsabilities involve ensuring frontend projects are delivered on time according to company standards, evaluating and making architectural and technologic choices for the frontend team, mentoring junior developers, ensuring all development is up to standards by coaching and code reviewing team members contributions.</p>
+					<p>Supervised a team of 6 frontend developers, functioned at a senior level in the organizational reported directly to the UK Director of Engineering.
+ My responsabilities included  planning and assiging development tasks among team members, performing code reviews, guiding the techincal direction of the project and technologies to adpot, establishing a growth plan for the junior and mid level team members, efficently delegating tasks to build a performing and autonomous team. Involved in 50+ technical interviews and provided hiring reccomendation for all frontend engineers at the company.</p>
 				</div>
 				<h5>Highlights</h5>
 				<ul class="keywords">
-					<li class="bullet">WebSockets</li>
+					<li class="bullet">Browser Extension</li>
 					<li class="bullet">ES6</li>
 					<li class="bullet">webpack</li>
 					<li class="bullet">Node.js</li>
@@ -404,11 +426,11 @@ ul.keywords {
 					Senior Frontend Developer
 				</div>
 				<div class="summary">
-					<p>Delivery of greenfield projects and features, existing code base refactors according to company standards, evaluating and making architectural and technologic choices, providing estimates </p>
+					<p>Joined DXI as their first senior frontend engineer, worked on a greenfield SPA used by thousands of contact center agents on a daily basis to handle incoming interactions, outbound calling and access to CRMs data. The frontend was based on Angular.js, Machina.js (FSM library) and made use of WebSockets for handling real time UI updates and instant messaging functionalities.Built a frontend components and services library used by other frontend projects. Built a websocket server using Node.js, socket.io and Redis to enable horizontal scaling and handling of several thousands WS connections per instance.</p>
 				</div>
 				<h5>Highlights</h5>
 				<ul class="keywords">
-					<li class="bullet">Browser Extension</li>
+					<li class="bullet">WebSockets</li>
 					<li class="bullet">Angular</li>
 					<li class="bullet">Node.js</li>
 					<li class="bullet">Electron</li>
@@ -429,7 +451,8 @@ ul.keywords {
 					Javascript Developer
 				</div>
 				<div class="summary">
-					<p>As the main developer on the intergation widget I&#x27;ve gathered the business requirements, planned and implemented an async-loaded third party floating UI widget that was used by customer websites to display a list of related content pages powered by the correlation engine running in the backend. Challenges included keeping a small code footprint and make the widget was lazy loaded without hampering host website performance, handle broad browser compatibility (IE7 still had market share at that time) and preventing css styling conflicts and JS libraries interference. The final solution was a one line embeddable script tag that would load the widget and allow website admins to specify site configurations..</p>
+					<p>As the main developer on the intergation widget I&#x27;ve gathered the business requirements, planned and implemented an async-loaded third party floating UI widget that was used by customer websites to display a list of related content pages powered by the correlation engine running in the backend.
+Challenges included keeping a small code footprint and make the widget was lazy loaded without hampering host website performance, handle broad browser compatibility (IE7 still had market share at that time) and preventing css styling conflicts and JS libraries interference. The final solution was a one line embeddable script tag that would load the widget and allow website admins to specify site configurations..</p>
 				</div>
 				<h5>Highlights</h5>
 				<ul class="keywords">
@@ -457,7 +480,8 @@ ul.keywords {
 					Fullstack Developer
 				</div>
 				<div class="summary">
-					<p>Worked on backend and frontend performance optimization and feature implementations for the company core application, enterprise travel management solution.On the backend side I’ve worked on new and existing integration via SOAP web services to communicate with GDS (Global Distribution System) systems. Worked on a solution to maintain a pool of valid session tokens and API response caching to maximize performance and reduce operational costs when requesting data from booking APIs that where billing on a api call model. I&#x27;ve also gained experience in SQL database modelling and query optimization. Implemented storerd procedures and caching. Frontend-wise, I&#x27;ve converted part of multi-page travel booking webapp to a single page experience with xhr requests, dynamic table components and maps based UIs. To organize the code base I&#x27;ve implemented a lightweight js library based on the cetralized pub-sub pattern to enhance frontend code modularization and communication between components. At the time jQuery was the most popular frontend library and state management or components frameworks had not been created yet.I&#x27;ve also worked on a Node.js + PhantomJS based headless browser integration test suite replicating end-user flows in our testing environment.</p>
+					<p>Worked on backend and frontend performance optimization and feature implementations for the company core application, enterprise travel management solution.On the backend side I&#x27;ve worked on new and existing integration via SOAP web services to communicate with GDS (Global Distribution System) systems.
+ Worked on a solution to maintain a pool of valid session tokens and API response caching to maximize performance and reduce operational costs when requesting data from booking APIs that where billing on a api call model. I&#x27;ve also gained experience in SQL database modelling and query optimization. Implemented storerd procedures and caching. Frontend-wise, I&#x27;ve converted part of multi-page travel booking webapp to a single page experience with xhr requests, dynamic table components and maps based UIs. To organize the code base I&#x27;ve implemented a lightweight js library based on the cetralized pub-sub pattern to enhance frontend code modularization and communication between components. At the time jQuery was the most popular frontend library and state management or components frameworks had not been created yet.I&#x27;ve also worked on a Node.js + PhantomJS based headless browser integration test suite replicating end-user flows in our testing environment.</p>
 				</div>
 				<h5>Highlights</h5>
 				<ul class="keywords">
@@ -715,11 +739,12 @@ ul.keywords {
 					<li>SQL</li>
 					<li>NoSQL</li>
 					<li>Cache databases</li>
-					<li>Frontend performance</li>
+					<li>Perf. Optimization</li>
 					<li>Browser Extensions</li>
 					<li>Software Architecture</li>
 					<li>UI Components</li>
 					<li>Event Driven Architecture</li>
+					<li>Microfrontends</li>
 				</ul>
 			</div>
 

@@ -23,7 +23,7 @@
 		gtag('config', 'G-NSDH75PFR4');
 	</script>
 	</head>
-	<body>
+	<body onload="document.body.classList.add('loaded')">
 
 	<header id="header">
 		<div class="container">
@@ -42,7 +42,11 @@
 					{{/label}}
 					{{/resume.basics}}
 				</div>
-				<div class="col-sm-3"><img src="./profile.jpg"></div>
+				<div class="col-sm-3">
+					<div class="profile-container">
+						<img src="./profile.jpg">
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
