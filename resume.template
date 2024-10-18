@@ -5,15 +5,27 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
 
-	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+	<title>{{#resume.basics}}{{name}}{{/resume.basics}} - {{#resume.basics}}{{label}}{{/resume.basics}}</title>
+	<link rel="icon" href="/favicon.png" type="image/png" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-
+	<meta property="og:type" name="og:type" content="article" />
+	<meta property="og:image" name="og:image" content="{{#resume.meta.og}}{{image}}{{/resume.meta.og}}" />
+	<meta property="og:url" name="og:url" content="{{#resume.meta.og}}{{url}}{{/resume.meta.og}}" />
+	<meta property="og:description" name="og:description" content="{{#resume.meta.og}}{{description}}{{/resume.meta.og}}" />
+	<meta property="og:locale" name="og:locale" content="en_US" />
+	<meta property="og:site_name" name="og:site_name" content="CV - {{#resume.basics}}{{name}}{{/resume.basics}} - {{#resume.basics}}{{label}}{{/resume.basics}}" />
+	<meta property="twitter:card" name="twitter:card" content="summary_large_image" />
+	<meta property="article:tag" name="article:tag" content="Curriculum" />
+	<meta property="article:tag" name="article:tag" content="Front-end" />
+	<meta property="article:tag" name="article:tag" content="JavaScript" />
+	<meta property="article:tag" name="article:tag" content="React" />
+	<meta property="article:tag" name="article:tag" content="Node.js" />
+	<meta property="article:section" name="article:section" content="Curriculum" />
 	<style type="text/css">
 	{{{css}}}
 	</style>
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSDH75PFR4"></script>
 	<script>
