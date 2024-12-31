@@ -34,7 +34,7 @@ font-family: "Playfair Display", serif;
 margin-top: 0;
 font-weight: 600;
 }
-section {
+.top-level-section {
 margin-top: 30px;
 }
 li {
@@ -171,23 +171,23 @@ ul.keywords {
 }
 
 @media (min-width: 480px) {
-	.strike-through {
+	.heading-with-date {
 		border-top: 1px solid #f4f6f6;
 		height: 20px;
 		margin-top: 12px;
 		margin-bottom: -2px;
 		position: relative;
 	}
-	.strike-through span,
-	.strike-through a {
+	.heading-with-date span,
+	.heading-with-date a {
 		background: #fff;
 		position: absolute;
 	}
-	.strike-through span:first-child {
+	.heading-with-date span:first-child {
 		padding-right: 20px;
 		margin-top: -12px;
 	}
-	.strike-through span + span {
+	.heading-with-date span + span {
 		font-size: 16px;
 		margin-top: -10px;
 		padding-left: 20px;
@@ -213,10 +213,10 @@ ul.keywords {
 		font-size: 14px;
 		margin-bottom: 5px;
 	}
-	.strike-through span:first-child {
+	.heading-with-date span:first-child {
 		margin-bottom: 7px;
 	}
-	.strike-through span {
+	.heading-with-date span {
 		display: block;
 	}
 	#header .profile-container {

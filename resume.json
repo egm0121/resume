@@ -8,6 +8,7 @@
   },
   "basics": {
     "name": "Giulio Dellorbo",
+    "nickname": "egm0121",
     "label": "Staff Software Engineer",
     "picture": "./profile.jpg",
     "email": "egm0121[at]gmail.com",
@@ -54,7 +55,7 @@
       "website": "https://www.8x8.com/",
       "startDate": "2018-11-02",
       "endDate": "current",
-      "summary": "• Responsible for planning and executing an incremental transition of core features for a production app written in Adobe AIR framework into a React + Electron codebase powering desktop and web platforms.\n• Identified technical debt and architectural improvements and planned actionable engineering tasks.\n• Code-reviewed contributions from team members.\n• Worked on Desktop specific features such as OS-specific installers, dynamic libraries, auto-updates, and custom protocol handling.\n• Served as technical point of contact for new integrations and PoCs with partners such as Citrix, Microsoft, and Google.\n• Authored internal tools to improve the dev-experience and speed up time to fix defects.\n• Worked on a company-wide effort to create standardized internal tools and libraries to solve cross-cutting concerns across all frontend projects such as reusable UI components, observability helpers and micro-frontends.",
+      "summary": "Responsible for planning and executing an incremental transition of core features for a production app written in Adobe AIR framework into a React + Electron codebase powering desktop and web platforms.\nIdentified technical debt and architectural improvements and planned actionable engineering tasks.\nCode-reviewed contributions from team members.\nWorked on Desktop specific features such as OS-specific installers, dynamic libraries, auto-updates, and custom protocol handling.\nServed as technical point of contact for new integrations and PoCs with partners such as Citrix, Microsoft, and Google.\nAuthored internal tools to improve the dev-experience and speed up time to fix defects.\nWorked on a company-wide effort to create standardized internal tools and libraries to solve cross-cutting concerns across all frontend projects such as reusable UI components, observability helpers and micro-frontends.",
       "highlights": ["Electron", "React", "Redux", "WebRTC", "WebAssembly", "WebHID", "Cypress", "Playwright"]
     },
     {
@@ -63,7 +64,7 @@
       "website": "https://www.8x8.com/uk",
       "startDate": "2015-05-01",
       "endDate": "2018-10-31",
-      "summary": "Supervised a team of 6 frontend developers, functioned at a senior level in the organization reporting directly to the UK Director of Engineering.\n• My responsibilities included planning and assigning development tasks among team members, performing code reviews, guiding the technical direction of the project and technologies to adopt, establishing a growth plan for the junior and mid-level team members, and efficiently delegating tasks to build a performing and autonomous team.\n• Involved in 50+ technical interviews and provided hiring reccomendations for all frontend engineers at the company.",
+      "summary": "Supervised a team of 6 frontend developers, functioned at a senior level in the organization reporting directly to the UK Director of Engineering.\nMy responsibilities included planning and assigning development tasks among team members, performing code reviews, guiding the technical direction of the project and technologies to adopt, establishing a growth plan for the junior and mid-level team members, and efficiently delegating tasks to build a performing and autonomous team.\nInvolved in 50+ technical interviews and provided hiring reccomendations for all frontend engineers at the company.",
       "highlights": ["Browser Extension","ES6", "webpack", "Node.js"]
     },
     {
@@ -98,7 +99,7 @@
       "website": "http://www.contur.it/",
       "startDate": "2011-11-01",
       "endDate": "2013-06-01",
-      "summary": "Worked as a full-stack developer on a web-based travel booking and management solution using PHP, Zend Framework, MySQL, and Redis.\n• Worked on both new and existing features consuming SOAP web services to communicate with GDS (Global Distribution System) systems.\n• Implemented extensive request caching and invalidation rules to maximize performance and reduce operational costs when using travel APIs billed by api request volume.\n• Gained experience in SQL database modeling and slow query optimization.\n• Frontend-wise, I've converted the multi-page website to a single-page experience with API requests, dynamic table components and maps-based UIs.\n • Authored several jQuery plugins and built a lightweight JS framework based on the mediator pattern to enhance code decoupling and communication between components.",
+      "summary": "Worked as a full-stack developer on a web-based travel booking and management solution using PHP, Zend Framework, MySQL, and Redis.\nWorked on both new and existing features consuming SOAP web services to communicate with GDS (Global Distribution System) systems.\nImplemented extensive request caching and invalidation rules to maximize performance and reduce operational costs when using travel APIs billed by api request volume.\nGained experience in SQL database modeling and slow query optimization.\nFrontend-wise, I've converted the multi-page website to a single-page experience with API requests, dynamic table components and maps-based UIs.\n -Authored several jQuery plugins and built a lightweight JS framework based on the mediator pattern to enhance code decoupling and communication between components.",
       "highlights": [
         "PHP",
         "Redis",

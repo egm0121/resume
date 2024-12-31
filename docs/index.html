@@ -60,7 +60,7 @@ font-family: "Playfair Display", serif;
 margin-top: 0;
 font-weight: 600;
 }
-section {
+.top-level-section {
 margin-top: 30px;
 }
 li {
@@ -197,23 +197,23 @@ ul.keywords {
 }
 
 @media (min-width: 480px) {
-	.strike-through {
+	.heading-with-date {
 		border-top: 1px solid #f4f6f6;
 		height: 20px;
 		margin-top: 12px;
 		margin-bottom: -2px;
 		position: relative;
 	}
-	.strike-through span,
-	.strike-through a {
+	.heading-with-date span,
+	.heading-with-date a {
 		background: #fff;
 		position: absolute;
 	}
-	.strike-through span:first-child {
+	.heading-with-date span:first-child {
 		padding-right: 20px;
 		margin-top: -12px;
 	}
-	.strike-through span + span {
+	.heading-with-date span + span {
 		font-size: 16px;
 		margin-top: -10px;
 		padding-left: 20px;
@@ -239,10 +239,10 @@ ul.keywords {
 		font-size: 14px;
 		margin-bottom: 5px;
 	}
-	.strike-through span:first-child {
+	.heading-with-date span:first-child {
 		margin-bottom: 7px;
 	}
-	.strike-through span {
+	.heading-with-date span {
 		display: block;
 	}
 	#header .profile-container {
@@ -283,6 +283,20 @@ ul.keywords {
 	margin: 1.5cm;
 }
 	</style>
+	<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Giulio Dellorbo",
+        "alternateName": "egm0121",
+        "identifier": "egm0121[at]gmail.com",
+        "description": "Hi! I&#x27;m an experienced Software Engineer having previously worked on complex web, desktop, and mobile apps for travel booking and enterprise communication industries.",
+        "image": "https://cv.egm0121.com/profile.jpg"
+      }
+    }
+    </script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSDH75PFR4"></script>
 	<script>
@@ -297,637 +311,617 @@ ul.keywords {
 	<header id="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
+				<article class="col-sm-9 col-sm-push-3">
+					<h1 role="heading" aria-level="1">
 						Giulio Dellorbo
 					</h1>
-					<h2>
+					<h2 role="heading" aria-level="2">
 						Staff Software Engineer
 					</h2>
-				</div>
+				</article>
 				<div class="col-sm-3">
 					<div class="profile-container">
-						<img src="./profile.jpg">
+						<img src="./profile.jpg" alt="Giulio's profile picture, on a mountain background wearing a backpack">
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-	<div id="content" class="container">
-
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">egm0121[at]gmail.com</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">(+1) 646	·95	3·73	52</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>I&#x27;m an experienced Software Engineer having previously worked on complex web, desktop and mobile apps for travel booking and enterprise communication industries.</p>
-			<p>My goal is to produce modular, reusable code leading to responsive UIs and performant applications.</p>
-			<p>In my free time, I like to build and launch software products, using lean methodology and experimentation to achieve growth and product-market fit.</p>
-		</div>
-	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						Github
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://github.com/egm0121">egm0121</a>
+	<main id="content" class="container">
+		<article>
+			<section id="contact" class="row top-level-section">
+				<aside class="col-sm-3">
+					<h3>Contact</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+					<div class="col-sm-6">
+						<strong>Email</strong>
+						<div class="email">egm0121[at]gmail.com</div>
+					</div>
+					<div class="col-sm-6">
+						<strong>Phone</strong>
+						<div class="phone">(+1) 646	·95	3·73	52</div>
+					</div>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="row top-level-section">
+				<aside class="col-sm-3">
+					<h3>About</h3>
+				</aside>
+				<section class="col-sm-9">
+					<p>I&#x27;m an experienced Software Engineer having previously worked on complex web, desktop and mobile apps for travel booking and enterprise communication industries.</p>
+					<p>My goal is to produce modular, reusable code leading to responsive UIs and performant applications.</p>
+					<p>In my free time, I like to build and launch software products, using lean methodology and experimentation to achieve growth and product-market fit.</p>
+				</section>
+			</section>
+			<section id="profiles" class="row top-level-section">
+				<aside class="col-sm-3">
+					<h3>Profiles</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<strong class="network">
+								Github
+							</strong>
+							<div class="username">
+								<div class="url">
+									<a href="https://github.com/egm0121">egm0121</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<strong class="network">
+								LinkedIn
+							</strong>
+							<div class="username">
+								<div class="url">
+									<a href="https://www.linkedin.com/in/giuliodellorbo">giuliodellorbo</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<strong class="network">
+								Medium
+							</strong>
+							<div class="username">
+								<div class="url">
+									<a href="https://medium.com/@egm0121">Giulio Dellorbo</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<strong class="network">
+								Download CV
+							</strong>
+							<div class="username">
+								<div class="url">
+									<a href="./cv.pdf">cv.pdf</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						LinkedIn
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://www.linkedin.com/in/giuliodellorbo">giuliodellorbo</a>
+			</section>
+
+			<section id="work" class="row top-level-section">
+				<aside class="col-sm-3">
+					<h3>Work</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+
+					<section class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>8x8 Inc</span>
+							<span class="date">
+								2018-11-02 — current
+							</span>
+						</h4>
+						<aside class="website pull-right">
+							<a href="https://www.8x8.com/">https://www.8x8.com/</a>
+						</aside>
+						<div class="position">
+							Principal Software Engineer
 						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Medium
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://medium.com/@egm0121">Giulio Dellorbo</a>
+						<section class="summary">
+							<p>Responsible for planning and executing an incremental transition of core features for a production app written in Adobe AIR framework into a React + Electron codebase powering desktop and web platforms.
+Identified technical debt and architectural improvements and planned actionable engineering tasks.
+Code-reviewed contributions from team members.
+Worked on Desktop specific features such as OS-specific installers, dynamic libraries, auto-updates, and custom protocol handling.
+Served as technical point of contact for new integrations and PoCs with partners such as Citrix, Microsoft, and Google.
+Authored internal tools to improve the dev-experience and speed up time to fix defects.
+Worked on a company-wide effort to create standardized internal tools and libraries to solve cross-cutting concerns across all frontend projects such as reusable UI components, observability helpers and micro-frontends.</p>
+						</section>
+						<h5>Highlights</h5>
+						<aside>
+							<ul class="keywords">
+							<li class="bullet">Electron</li>
+							<li class="bullet">React</li>
+							<li class="bullet">Redux</li>
+							<li class="bullet">WebRTC</li>
+							<li class="bullet">WebAssembly</li>
+							<li class="bullet">WebHID</li>
+							<li class="bullet">Cypress</li>
+							<li class="bullet">Playwright</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>8x8 UK</span>
+							<span class="date">
+								2015-05-01 — 2018-10-31
+							</span>
+						</h4>
+						<aside class="website pull-right">
+							<a href="https://www.8x8.com/uk">https://www.8x8.com/uk</a>
+						</aside>
+						<div class="position">
+							Lead Frontend Developer - UK
 						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Download CV
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="./cv.pdf">cv.pdf</a>
+						<section class="summary">
+							<p>Supervised a team of 6 frontend developers, functioned at a senior level in the organization reporting directly to the UK Director of Engineering.
+My responsibilities included planning and assigning development tasks among team members, performing code reviews, guiding the technical direction of the project and technologies to adopt, establishing a growth plan for the junior and mid-level team members, and efficiently delegating tasks to build a performing and autonomous team.
+Involved in 50+ technical interviews and provided hiring reccomendations for all frontend engineers at the company.</p>
+						</section>
+						<h5>Highlights</h5>
+						<aside>
+							<ul class="keywords">
+							<li class="bullet">Browser Extension</li>
+							<li class="bullet">ES6</li>
+							<li class="bullet">webpack</li>
+							<li class="bullet">Node.js</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>DXI Ltd</span>
+							<span class="date">
+								2013-06-01 — 2015-05-01
+							</span>
+						</h4>
+						<aside class="website pull-right">
+							<a href="http://www.easycallnow.net/">http://www.easycallnow.net/</a>
+						</aside>
+						<div class="position">
+							Senior Frontend Developer
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>8x8 Inc</span>
-					<span class="date">
-						2018-11-02 — current
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://www.8x8.com/">https://www.8x8.com/</a>
-				</div>
-				<div class="position">
-					Principal Software Engineer
-				</div>
-				<div class="summary">
-					<p>• Responsible for planning and executing an incremental transition of core features for a production app written in Adobe AIR framework into a React + Electron codebase powering desktop and web platforms.
-• Identified technical debt and architectural improvements and planned actionable engineering tasks.
-• Code-reviewed contributions from team members.
-• Worked on Desktop specific features such as OS-specific installers, dynamic libraries, auto-updates, and custom protocol handling.
-• Served as technical point of contact for new integrations and PoCs with partners such as Citrix, Microsoft, and Google.
-• Authored internal tools to improve the dev-experience and speed up time to fix defects.
-• Worked on a company-wide effort to create standardized internal tools and libraries to solve cross-cutting concerns across all frontend projects such as reusable UI components, observability helpers and micro-frontends.</p>
-				</div>
-				<h5>Highlights</h5>
-				<ul class="keywords">
-					<li class="bullet">Electron</li>
-					<li class="bullet">React</li>
-					<li class="bullet">Redux</li>
-					<li class="bullet">WebRTC</li>
-					<li class="bullet">WebAssembly</li>
-					<li class="bullet">WebHID</li>
-					<li class="bullet">Cypress</li>
-					<li class="bullet">Playwright</li>
-				</ul>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>8x8 UK</span>
-					<span class="date">
-						2015-05-01 — 2018-10-31
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://www.8x8.com/uk">https://www.8x8.com/uk</a>
-				</div>
-				<div class="position">
-					Lead Frontend Developer - UK
-				</div>
-				<div class="summary">
-					<p>Supervised a team of 6 frontend developers, functioned at a senior level in the organization reporting directly to the UK Director of Engineering.
-• My responsibilities included planning and assigning development tasks among team members, performing code reviews, guiding the technical direction of the project and technologies to adopt, establishing a growth plan for the junior and mid-level team members, and efficiently delegating tasks to build a performing and autonomous team.
-• Involved in 50+ technical interviews and provided hiring reccomendations for all frontend engineers at the company.</p>
-				</div>
-				<h5>Highlights</h5>
-				<ul class="keywords">
-					<li class="bullet">Browser Extension</li>
-					<li class="bullet">ES6</li>
-					<li class="bullet">webpack</li>
-					<li class="bullet">Node.js</li>
-				</ul>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>DXI Ltd</span>
-					<span class="date">
-						2013-06-01 — 2015-05-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.easycallnow.net/">http://www.easycallnow.net/</a>
-				</div>
-				<div class="position">
-					Senior Frontend Developer
-				</div>
-				<div class="summary">
-					<p>Joined DXI as their first senior frontend engineer, worked on a greenfield SPA used by thousands of contact center agents on a daily basis to handle incoming interactions, outbound calling, and access to CRMs data.
+						<section class="summary">
+							<p>Joined DXI as their first senior frontend engineer, worked on a greenfield SPA used by thousands of contact center agents on a daily basis to handle incoming interactions, outbound calling, and access to CRMs data.
 Frontend app was based on Angular.js, Machina.js (FSM library) and made use of WebSockets for handling real-time UI updates and instant messaging functionalities.
 Built a library of UI components and services reusable in other frontend projects.
 Built a websocket server using Node.js, socket.io, and Redis to enable horizontal scaling and handling of several thousands WS connections per instance.</p>
-				</div>
-				<h5>Highlights</h5>
-				<ul class="keywords">
-					<li class="bullet">WebSockets</li>
-					<li class="bullet">Angular</li>
-					<li class="bullet">Node.js</li>
-					<li class="bullet">Electron</li>
-				</ul>
-			</div>
+						</section>
+						<h5>Highlights</h5>
+						<aside>
+							<ul class="keywords">
+							<li class="bullet">WebSockets</li>
+							<li class="bullet">Angular</li>
+							<li class="bullet">Node.js</li>
+							<li class="bullet">Electron</li>
+							</ul>
+						</aside>
+					</section>
 
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>UpCloo Ltd</span>
-					<span class="date">
-						2012-07-01 — 2012-09-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://github.com/upcloo">https://github.com/upcloo</a>
-				</div>
-				<div class="position">
-					Javascript Developer
-				</div>
-				<div class="summary">
-					<p>As the main developer on the integration widget, I&#x27;ve gathered the business requirements, planned and implemented an async-loaded third-party floating UI widget used by customer websites to display related content powered by the correlation engine wrote by the backend team.
+					<section class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>UpCloo Ltd</span>
+							<span class="date">
+								2012-07-01 — 2012-09-01
+							</span>
+						</h4>
+						<aside class="website pull-right">
+							<a href="https://github.com/upcloo">https://github.com/upcloo</a>
+						</aside>
+						<div class="position">
+							Javascript Developer
+						</div>
+						<section class="summary">
+							<p>As the main developer on the integration widget, I&#x27;ve gathered the business requirements, planned and implemented an async-loaded third-party floating UI widget used by customer websites to display related content powered by the correlation engine wrote by the backend team.
 Challenges included keeping a small code footprint and making the widget was lazy loaded without hampering host website performance, handling broad browser compatibility (IE7 still had market share at that time) and preventing css styling conflicts or JS libraries interference. The final solution was a one-line embeddable script tag that would load the widget and allow website admins to specify site configurations.</p>
-				</div>
-				<h5>Highlights</h5>
-				<ul class="keywords">
-					<li class="bullet">Browser Compat.</li>
-					<li class="bullet">Async-loading</li>
-					<li class="bullet">CORS</li>
-					<li class="bullet">CSS3</li>
-					<li class="bullet">AWS</li>
-					<li class="bullet">JSONP</li>
-					<li class="bullet">Thirdparty code</li>
-				</ul>
-			</div>
+						</section>
+						<h5>Highlights</h5>
+						<aside>
+							<ul class="keywords">
+							<li class="bullet">Browser Compat.</li>
+							<li class="bullet">Async-loading</li>
+							<li class="bullet">CORS</li>
+							<li class="bullet">CSS3</li>
+							<li class="bullet">AWS</li>
+							<li class="bullet">JSONP</li>
+							<li class="bullet">Thirdparty code</li>
+							</ul>
+						</aside>
+					</section>
 
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>Contur Srl</span>
-					<span class="date">
-						2011-11-01 — 2013-06-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.contur.it/">http://www.contur.it/</a>
+					<section class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>Contur Srl</span>
+							<span class="date">
+								2011-11-01 — 2013-06-01
+							</span>
+						</h4>
+						<aside class="website pull-right">
+							<a href="http://www.contur.it/">http://www.contur.it/</a>
+						</aside>
+						<div class="position">
+							Fullstack Developer
+						</div>
+						<section class="summary">
+							<p>Worked as a full-stack developer on a web-based travel booking and management solution using PHP, Zend Framework, MySQL, and Redis.
+Worked on both new and existing features consuming SOAP web services to communicate with GDS (Global Distribution System) systems.
+Implemented extensive request caching and invalidation rules to maximize performance and reduce operational costs when using travel APIs billed by api request volume.
+Gained experience in SQL database modeling and slow query optimization.
+Frontend-wise, I&#x27;ve converted the multi-page website to a single-page experience with API requests, dynamic table components and maps-based UIs.
+ -Authored several jQuery plugins and built a lightweight JS framework based on the mediator pattern to enhance code decoupling and communication between components.</p>
+						</section>
+						<h5>Highlights</h5>
+						<aside>
+							<ul class="keywords">
+							<li class="bullet">PHP</li>
+							<li class="bullet">Redis</li>
+							<li class="bullet">REST</li>
+							<li class="bullet">SOAP</li>
+							<li class="bullet">Phantom.js</li>
+							<li class="bullet">Frontend perf.</li>
+							</ul>
+						</aside>
+					</section>
+					</div>
 				</div>
-				<div class="position">
-					Fullstack Developer
-				</div>
-				<div class="summary">
-					<p>Worked as a full-stack developer on a web-based travel booking and management solution using PHP, Zend Framework, MySQL, and Redis.
-• Worked on both new and existing features consuming SOAP web services to communicate with GDS (Global Distribution System) systems.
-• Implemented extensive request caching and invalidation rules to maximize performance and reduce operational costs when using travel APIs billed by api request volume.
-• Gained experience in SQL database modeling and slow query optimization.
-• Frontend-wise, I&#x27;ve converted the multi-page website to a single-page experience with API requests, dynamic table components and maps-based UIs.
- • Authored several jQuery plugins and built a lightweight JS framework based on the mediator pattern to enhance code decoupling and communication between components.</p>
-				</div>
-				<h5>Highlights</h5>
-				<ul class="keywords">
-					<li class="bullet">PHP</li>
-					<li class="bullet">Redis</li>
-					<li class="bullet">REST</li>
-					<li class="bullet">SOAP</li>
-					<li class="bullet">Phantom.js</li>
-					<li class="bullet">Frontend perf.</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>Liceo Scientifico Marie Curie</span>
-					<span class="date">
-						2006-09-01 — 2011-09-01
-					</span>
-				</h4>
-				<div class="area">
-					Scientific Studies
-				</div>
-				<div class="studyType">
-					High School Diploma
-				</div>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>ESOL Level 1 Certificate in English</span>
-					<span class="date">
-						2010-03-01 — 
-					</span>
-				</h4>
-				<div class="area">
-					Language certificate
-				</div>
-				<div class="studyType">
-					ESOL Level 1 - B2
-				</div>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>DELF B2 - Langue Française</span>
-					<span class="date">
-						2010-08-11 — 
-					</span>
-				</h4>
-				<div class="area">
-					Language certificate
-				</div>
-				<div class="studyType">
-					DELF B2
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="awards" class="row">
-		<aside class="col-sm-3">
-			<h3>Certifications & Awards</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>AWS Certified Solutions Architect - Associate</span>
-				</h4>
-				<div class="date pull-right">
-					<em>Awarded</em>
-					2021-12-05
-				</div>
-				<div class="awarder">
-					<em>by</em>
-					<strong>Amazon Web Services</strong>
-				</div>
-				<div class="summary">
-					https://www.credly.com/badges/25297a38-035c-478d-bebb-27297e0fe1ba
-				</div>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>Key Contributor Award</span>
-				</h4>
-				<div class="date pull-right">
-					<em>Awarded</em>
-					2016-07-01
-				</div>
-				<div class="awarder">
-					<em>by</em>
-					<strong>8x8 Inc.</strong>
-				</div>
-				<div class="summary">
-					Work on EasyContactNow infrastructure.
-				</div>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>PHP Certified Engineer</span>
-				</h4>
-				<div class="date pull-right">
-					<em>Awarded</em>
-					2008-11-18
-				</div>
-				<div class="awarder">
-					<em>by</em>
-					<strong>Zend Technologies</strong>
-				</div>
-				<div class="summary">
-					PHP Certification
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="publications" class="row">
-		<aside class="col-sm-3">
-			<h3>Personal Projects</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>Mailbunny.ai | Faster newsletter reading</span>
-					<span class="date">
-						
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://ai.google.dev/competition/projects/mailbunny"></a>
-				</div>
-				<div class="publisher">
-					<em>Available on</em>
-					<strong>Web</strong>
-				</div>
-				<div class="summary">
-					<p>Built this LLM-powered tool as a submission for the Google Gemini Dev competition. MailBunny helps relieve email fatigue and accelerates getting to inbox zero by reading incoming newsletters and sending you a summary of the most relevant content in a single daily email. Leveraging Google&#x27;s gemini-1.5-flash model, AWS Lambda, DynamDB, SQS, S3, and SES (Simple Email Service) for receiving inbound emails on custom @mailbunny.ai aliases.</p>
-				</div>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>jest-test-gen | Unit test boilerplate generator</span>
-					<span class="date">
-						
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://github.com/egm0121/jest-test-gen"></a>
-				</div>
-				<div class="publisher">
-					<em>Available on</em>
-					<strong>npm</strong>
-				</div>
-				<div class="summary">
-					<p>Wrote a tool to generate boilerplate of a jest unit test file for an existing Javascript or Typescript source file with all imports mocked and a test template for every class, POJOs or functions exported. It also supports React components both classic and functional. The tool is written in typescript and uses its parser to walk the AST of a source file and generate testing code based on what is exported. It was featured by the popular Node Weekly newsletter and reached 180+ stars on GitHub.</p>
-				</div>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>SpeedSound | Expo | Typescript</span>
-					<span class="date">
-						
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://www.speedsound.app/"></a>
-				</div>
-				<div class="publisher">
-					<em>Available on</em>
-					<strong>App Store and Play Store</strong>
-				</div>
-				<div class="summary">
-					<p>SpeedSound is a unique voice-based speedometer that uses voice notifications to update the user of its live speed. Real time GPS speedometer using your headphones or speaker.Computes the stats and speed graph for every activity.Multiple speed unit measures supported.</p>
-				</div>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>SplitCloud | React Native | 1M+ Downloads</span>
-					<span class="date">
-						
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.splitcloud-app.com/"></a>
-				</div>
-				<div class="publisher">
-					<em>Available on</em>
-					<strong>App Store and Play Store</strong>
-				</div>
-				<div class="summary">
-					<p>Share your headphones with who&#x27;s next to you and stream two different tracks and access the SoundCloud® streaming platform. SplitCloud gives you two independent music players with adjustable volumes and playlist support. Scalable Backend for music charts and custom playlists in AWS Lambda + SQS + DynamoDB</p>
-				</div>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>$$Watchers - Chrome Dev Tools Extension</span>
-					<span class="date">
-						
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://goo.gl/c3nn5J"></a>
-				</div>
-				<div class="publisher">
-					<em>Available on</em>
-					<strong>Google Chrome Web Store</strong>
-				</div>
-				<div class="summary">
-					<p>Angular watchers is the ultimate AngularJS tool which tells you how many active watchers you currently have in your web app. It automatically updates the count so you can see a counter or a graph by opening the $$watchers panel inside Chrome Dev Tools.</p>
-				</div>
-			</div>
-
-			<div class="col-sm-12 ">
-				<h4 class="strike-through">
-					<span>SplitBeats - iOS App | Objective-C</span>
-					<span class="date">
-						
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.split-beats.com/"></a>
-				</div>
-				<div class="publisher">
-					<em>Available on</em>
-					<strong>Apple AppStore</strong>
-				</div>
-				<div class="summary">
-					<p>SplitBeats is a free music iOS app that allows your device to manage two music players at same time, and play different tracks on each side when sharing headphones.</p>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-
-			<div class="col-sm-6 ">
-				<div class="name">
-					<h4>Technologies</h4>
-				</div>
-				<ul class="keywords">
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>Javascript</li>
-					<li>Typescript</li>
-					<li>WebSockets</li>
-					<li>JSON</li>
-					<li>REST APIs</li>
-					<li>JWT</li>
-					<li>OAuth</li>
-					<li>OTP</li>
-					<li>Serverless</li>
-					<li>Python</li>
-					<li>Docker</li>
-					<li>AWS</li>
-					<li>PHP</li>
-					<li>OOP</li>
-					<li>SQL</li>
-					<li>NoSQL</li>
-					<li>Cache databases</li>
-					<li>Perf. Optimization</li>
-					<li>Browser Extensions</li>
-					<li>Software Architecture</li>
-					<li>UI Components</li>
-					<li>Event Driven Architecture</li>
-					<li>Microfrontends</li>
-				</ul>
-			</div>
-
-			<div class="col-sm-6 ">
-				<div class="name">
-					<h4>Libraries and Frameworks</h4>
-				</div>
-				<ul class="keywords">
-					<li>React</li>
-					<li>Redux</li>
-					<li>Immutable.js</li>
-					<li>React Native</li>
-					<li>Expo</li>
-					<li>Gatsby</li>
-					<li>Electron</li>
-					<li>Socket.io</li>
-					<li>Express</li>
-					<li>Angular.js</li>
-					<li>Google Analytics</li>
-					<li>Webpack</li>
-					<li>Jest</li>
-					<li>Cypress</li>
-					<li>Playwright</li>
-					<li>Puppeteer</li>
-					<li>pandas</li>
-					<li>numpy</li>
-					<li>statsmodel</li>
-					<li>pyplot</li>
-					<li>seaborn</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-
-			<div class="col-sm-6 ">
-				<div class="language">
-					<strong>Italian</strong>
-				</div>
-				<div class="fluency">
-					Native speaker
-				</div>
-			</div>
-
-			<div class="col-sm-6 ">
-				<div class="language">
-					<strong>French</strong>
-				</div>
-				<div class="fluency">
-					Bilingual
-				</div>
-			</div>
-
-			<div class="col-sm-6 ">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Bilingual
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9 ">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>Mobile App Development</li>
-					<li>Distributed Systems</li>
-					<li>Functional Programming</li>
-					<li>Scalable Cloud Architectures</li>
-					<li>Audio Programming</li>
-					<li>IoT</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+			</section>
 
 
-	</div>
+			<section id="education" class="row top-level-section">
+				<aside class="col-sm-3">
+					<h3>Education</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+
+					<div class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>Liceo Scientifico Marie Curie</span>
+							<span class="date">
+								2006-09-01 — 2011-09-01
+							</span>
+						</h4>
+						<div class="area">
+							Scientific Studies
+						</div>
+						<div class="studyType">
+							High School Diploma
+						</div>
+					</div>
+
+					<div class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>ESOL Level 1 Certificate in English</span>
+							<span class="date">
+								2010-03-01 — 
+							</span>
+						</h4>
+						<div class="area">
+							Language certificate
+						</div>
+						<div class="studyType">
+							ESOL Level 1 - B2
+						</div>
+					</div>
+
+					<div class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>DELF B2 - Langue Française</span>
+							<span class="date">
+								2010-08-11 — 
+							</span>
+						</h4>
+						<div class="area">
+							Language certificate
+						</div>
+						<div class="studyType">
+							DELF B2
+						</div>
+					</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="awards" class="row top-level-section">
+				<aside class="col-sm-3">
+					<h3>Certifications & Awards</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+
+					<div class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>AWS Certified Solutions Architect - Associate</span>
+						</h4>
+						<div class="date pull-right">
+							<em>Awarded</em>
+							2021-12-05
+						</div>
+						<div class="awarder">
+							<em>by</em>
+							<strong>Amazon Web Services</strong>
+						</div>
+						<section class="summary">
+							https://www.credly.com/badges/25297a38-035c-478d-bebb-27297e0fe1ba
+						</section>
+					</div>
+
+					<div class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>Key Contributor Award</span>
+						</h4>
+						<div class="date pull-right">
+							<em>Awarded</em>
+							2016-07-01
+						</div>
+						<div class="awarder">
+							<em>by</em>
+							<strong>8x8 Inc.</strong>
+						</div>
+						<section class="summary">
+							Work on EasyContactNow infrastructure.
+						</section>
+					</div>
+
+					<div class="col-sm-12 ">
+						<h4 class="heading-with-date">
+							<span>PHP Certified Engineer</span>
+						</h4>
+						<div class="date pull-right">
+							<em>Awarded</em>
+							2008-11-18
+						</div>
+						<div class="awarder">
+							<em>by</em>
+							<strong>Zend Technologies</strong>
+						</div>
+						<section class="summary">
+							PHP Certification
+						</section>
+					</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="publications" class="row top-level-section">
+				<aside class="col-sm-3">
+					<h3>Personal Projects</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+
+					<section class="col-sm-12 ">
+						<h4>Mailbunny.ai | Faster newsletter reading</h4>
+						<aside class="website pull-right">
+							<a href="https://ai.google.dev/competition/projects/mailbunny"></a>
+						</aside>
+						<div class="publisher">
+							<em>Available on</em>
+							<strong>Web</strong>
+						</div>
+						<section class="summary">
+							<p>Built this LLM-powered tool as a submission for the Google Gemini Dev competition. MailBunny helps relieve email fatigue and accelerates getting to inbox zero by reading incoming newsletters and sending you a summary of the most relevant content in a single daily email. Leveraging Google&#x27;s gemini-1.5-flash model, AWS Lambda, DynamDB, SQS, S3, and SES (Simple Email Service) for receiving inbound emails on custom @mailbunny.ai aliases.</p>
+						</section>
+					</section>
+
+					<section class="col-sm-12 ">
+						<h4>jest-test-gen | Unit test boilerplate generator</h4>
+						<aside class="website pull-right">
+							<a href="https://github.com/egm0121/jest-test-gen"></a>
+						</aside>
+						<div class="publisher">
+							<em>Available on</em>
+							<strong>npm</strong>
+						</div>
+						<section class="summary">
+							<p>Wrote a tool to generate boilerplate of a jest unit test file for an existing Javascript or Typescript source file with all imports mocked and a test template for every class, POJOs or functions exported. It also supports React components both classic and functional. The tool is written in typescript and uses its parser to walk the AST of a source file and generate testing code based on what is exported. It was featured by the popular Node Weekly newsletter and reached 180+ stars on GitHub.</p>
+						</section>
+					</section>
+
+					<section class="col-sm-12 ">
+						<h4>SpeedSound | Expo | Typescript</h4>
+						<aside class="website pull-right">
+							<a href="https://www.speedsound.app/"></a>
+						</aside>
+						<div class="publisher">
+							<em>Available on</em>
+							<strong>App Store and Play Store</strong>
+						</div>
+						<section class="summary">
+							<p>SpeedSound is a unique voice-based speedometer that uses voice notifications to update the user of its live speed. Real time GPS speedometer using your headphones or speaker.Computes the stats and speed graph for every activity.Multiple speed unit measures supported.</p>
+						</section>
+					</section>
+
+					<section class="col-sm-12 ">
+						<h4>SplitCloud | React Native | 1M+ Downloads</h4>
+						<aside class="website pull-right">
+							<a href="http://www.splitcloud-app.com/"></a>
+						</aside>
+						<div class="publisher">
+							<em>Available on</em>
+							<strong>App Store and Play Store</strong>
+						</div>
+						<section class="summary">
+							<p>Share your headphones with who&#x27;s next to you and stream two different tracks and access the SoundCloud® streaming platform. SplitCloud gives you two independent music players with adjustable volumes and playlist support. Scalable Backend for music charts and custom playlists in AWS Lambda + SQS + DynamoDB</p>
+						</section>
+					</section>
+
+					<section class="col-sm-12 ">
+						<h4>$$Watchers - Chrome Dev Tools Extension</h4>
+						<aside class="website pull-right">
+							<a href="http://goo.gl/c3nn5J"></a>
+						</aside>
+						<div class="publisher">
+							<em>Available on</em>
+							<strong>Google Chrome Web Store</strong>
+						</div>
+						<section class="summary">
+							<p>Angular watchers is the ultimate AngularJS tool which tells you how many active watchers you currently have in your web app. It automatically updates the count so you can see a counter or a graph by opening the $$watchers panel inside Chrome Dev Tools.</p>
+						</section>
+					</section>
+
+					<section class="col-sm-12 ">
+						<h4>SplitBeats - iOS App | Objective-C</h4>
+						<aside class="website pull-right">
+							<a href="http://www.split-beats.com/"></a>
+						</aside>
+						<div class="publisher">
+							<em>Available on</em>
+							<strong>Apple AppStore</strong>
+						</div>
+						<section class="summary">
+							<p>SplitBeats is a free music iOS app that allows your device to manage two music players at same time, and play different tracks on each side when sharing headphones.</p>
+						</section>
+					</section>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills" class="row top-level-section">
+				<aside class="col-sm-3">
+					<h3>Skills</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+
+					<div class="col-sm-6 ">
+						<div class="name">
+							<h4>Technologies</h4>
+						</div>
+						<ul class="keywords">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Javascript</li>
+							<li>Typescript</li>
+							<li>WebSockets</li>
+							<li>JSON</li>
+							<li>REST APIs</li>
+							<li>JWT</li>
+							<li>OAuth</li>
+							<li>OTP</li>
+							<li>Serverless</li>
+							<li>Python</li>
+							<li>Docker</li>
+							<li>AWS</li>
+							<li>PHP</li>
+							<li>OOP</li>
+							<li>SQL</li>
+							<li>NoSQL</li>
+							<li>Cache databases</li>
+							<li>Perf. Optimization</li>
+							<li>Browser Extensions</li>
+							<li>Software Architecture</li>
+							<li>UI Components</li>
+							<li>Event Driven Architecture</li>
+							<li>Microfrontends</li>
+						</ul>
+					</div>
+
+					<div class="col-sm-6 ">
+						<div class="name">
+							<h4>Libraries and Frameworks</h4>
+						</div>
+						<ul class="keywords">
+							<li>React</li>
+							<li>Redux</li>
+							<li>Immutable.js</li>
+							<li>React Native</li>
+							<li>Expo</li>
+							<li>Gatsby</li>
+							<li>Electron</li>
+							<li>Socket.io</li>
+							<li>Express</li>
+							<li>Angular.js</li>
+							<li>Google Analytics</li>
+							<li>Webpack</li>
+							<li>Jest</li>
+							<li>Cypress</li>
+							<li>Playwright</li>
+							<li>Puppeteer</li>
+							<li>pandas</li>
+							<li>numpy</li>
+							<li>statsmodel</li>
+							<li>pyplot</li>
+							<li>seaborn</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="languages" class="row top-level-section">
+				<aside class="col-sm-3">
+					<h3>Languages</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+
+					<div class="col-sm-6 ">
+						<div class="language">
+							<strong>Italian</strong>
+						</div>
+						<div class="fluency">
+							Native speaker
+						</div>
+					</div>
+
+					<div class="col-sm-6 ">
+						<div class="language">
+							<strong>French</strong>
+						</div>
+						<div class="fluency">
+							Bilingual
+						</div>
+					</div>
+
+					<div class="col-sm-6 ">
+						<div class="language">
+							<strong>English</strong>
+						</div>
+						<div class="fluency">
+							Bilingual
+						</div>
+					</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="interests" class="row top-level-section">
+				<aside class="col-sm-3">
+					<h3>Interests</h3>
+				</aside>
+				<div class="col-sm-9 ">
+					<div class="row">
+					<div class="col-sm-6">
+						<div class="name">
+							<h4>Development</h4>
+						</div>
+						<ul class="keywords">
+							<li>Mobile App Development</li>
+							<li>Distributed Systems</li>
+							<li>Functional Programming</li>
+							<li>Scalable Cloud Architectures</li>
+							<li>Audio Programming</li>
+							<li>IoT</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</section>
+
+		</article>
+	</main>
 
 	</body>
 </html>
